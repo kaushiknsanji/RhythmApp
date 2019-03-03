@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Contains static information used by ArtistListFragment and ArtistDetailActivity -->
+
+    <!-- Artist Names -->
+    <string name="artist_beyonce">Beyonce</string>
+    <string name="artist_elvis_presley">Elvis Presley</string>
+    <string name="artist_jessie_j">Jessie J</string>
+    <string name="artist_john_lennon">John Lennon</string>
+    <string name="artist_rihanna">Rihanna</string>
+    <string name="artist_selena_gomez">Selena Gomez</string>
+
+    <!-- Fixed Album Count for Artists -->
+    <string name="artist_album_count">2 Albums</string>
+
+    <!-- Fixed Total Songs Count for Artists -->
+    <string name="artist_albums_song_count">6 Songs</string>
+
+    <!-- Album-1 of Artist-1 with 3 Songs -->
+    <string name="artist_1_album_1">Lemonade</string>
+    <string name="artist_1_album_1_genre">Pop, R&amp;B</string>
+    <string name="artist_1_album_1_year">2016</string>
+    <string name="artist_1_album_1_song_1">Formation</string>
+    <string name="artist_1_album_1_song_2">Freedom</string>
+    <string name="artist_1_album_1_song_3">Don\'t Hurt Yourself</string>
+
+    <!-- Album-2 of Artist-1 with 3 Songs -->
+    <string name="artist_1_album_2">Dangerously in Love</string>
+    <string name="artist_1_album_2_genre">Dance-pop, R&amp;B</string>
+    <string name="artist_1_album_2_year">2003</string>
+    <string name="artist_1_album_2_song_1">Me, Myself and I</string>
+    <string name="artist_1_album_2_song_2">Speechless</string>
+    <string name="artist_1_album_2_song_3">Be With You</string>
+
+    <!-- Song Track Numbers -->
+    <string name="artist_1_albums_song_1_track_no">1.</string>
+    <string name="artist_1_albums_song_2_track_no">2.</string>
+    <string name="artist_1_albums_song_3_track_no">3.</string>
+
+</resources>

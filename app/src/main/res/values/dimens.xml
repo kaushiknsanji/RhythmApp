@@ -1,0 +1,185 @@
+<resources>
+    <!-- MATCH CONSTRAINT Dimension used for ConstraintLayouts -->
+    <dimen name="match_constraint_0dp">0dp</dimen>
+
+    <!-- ========================= -->
+    <!-- FOR ALL DESIGN COMPONENTS -->
+    <!-- ========================= -->
+    <dimen name="fab_material_margin">16dp</dimen>
+    <dimen name="nav_header_material_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_material_height">176dp</dimen>
+    <dimen name="app_bar_no_elevation">0dp</dimen>
+    <dimen name="app_bar_material_elevation">4dp</dimen>
+    <dimen name="bottom_sheet_material_elevation">8dp</dimen>
+
+    <!-- For the Common Card used in the app -->
+    <dimen name="card_all_corner_radius">4dp</dimen>
+
+    <!-- For the Hero Image on Collapsible Toolbars -->
+    <dimen name="image_all_hero_size">200dp</dimen>
+
+    <!-- ==================================== -->
+    <!-- FOR THE COMMON EXPLANATION CONTAINER -->
+    <!-- ==================================== -->
+    <dimen name="card_all_explanation_vertical_margin">16dp</dimen>
+    <dimen name="card_all_explanation_content_padding">8dp</dimen>
+    <dimen name="text_all_explanation_drawable_padding">8dp</dimen>
+
+    <!-- ============================== -->
+    <!-- FOR THE HOME ACTIVITY/FRAGMENT -->
+    <!-- ============================== -->
+    <dimen name="nav_header_home_horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_home_vertical_margin">16dp</dimen>
+    <dimen name="content_home_vertical_padding">16dp</dimen>
+    <dimen name="guideline_home_horizontal_keyline">16dp</dimen>
+    <dimen name="card_home_corner_radius">8dp</dimen>
+    <dimen name="card_home_item_vertical_margin">4dp</dimen>
+    <dimen name="card_home_item_horizontal_margin">2dp</dimen>
+    <dimen name="card_home_item_title_padding">4dp</dimen>
+    <dimen name="image_home_item_size">144dp</dimen>
+
+    <!-- =========================== -->
+    <!-- FOR THE ALBUM LIST FRAGMENT -->
+    <!-- =========================== -->
+    <dimen name="content_album_list_vertical_padding">16dp</dimen>
+    <dimen name="guideline_album_list_horizontal_keyline">16dp</dimen>
+    <dimen name="card_album_list_corner_radius">8dp</dimen>
+    <dimen name="card_album_list_item_vertical_margin">4dp</dimen>
+    <dimen name="card_album_list_item_horizontal_margin">2dp</dimen>
+    <dimen name="image_album_list_item_size">144dp</dimen>
+    <dimen name="card_album_list_item_title_padding">8dp</dimen>
+
+    <!-- ============================= -->
+    <!-- FOR THE ALBUM DETAIL ACTIVITY -->
+    <!-- ============================= -->
+    <dimen name="cl_album_detail_info_padding">8dp</dimen>
+    <dimen name="text_album_detail_year_margin_top">2dp</dimen>
+    <dimen name="album_detail_track_spacing">8dp</dimen>
+    <dimen name="album_detail_track_horizontal_margin">8dp</dimen>
+    <dimen name="text_album_detail_track_length_margin_right">8dp</dimen>
+    <dimen name="imgbtn_album_detail_track_size">48dp</dimen>
+    <dimen name="text_album_detail_track_artists_margin_top">1dp</dimen>
+    <dimen name="text_album_detail_track_title_margin_left">12dp</dimen>
+
+    <!-- ========================== -->
+    <!-- FOR THE SONG LIST FRAGMENT -->
+    <!-- ========================== -->
+    <dimen name="song_list_track_spacing">8dp</dimen>
+    <dimen name="song_list_track_horizontal_margin">8dp</dimen>
+    <dimen name="song_list_content_padding_top">16dp</dimen>
+    <dimen name="text_song_list_track_length_margin_right">8dp</dimen>
+    <dimen name="imgbtn_song_list_track_size">48dp</dimen>
+    <dimen name="text_song_list_track_artists_margin_top">1dp</dimen>
+
+    <!-- ============================ -->
+    <!-- FOR THE ARTIST LIST FRAGMENT -->
+    <!-- ============================ -->
+    <dimen name="content_artist_list_vertical_padding">16dp</dimen>
+    <dimen name="guideline_artist_list_horizontal_keyline">16dp</dimen>
+    <dimen name="card_artist_list_corner_radius">8dp</dimen>
+    <dimen name="card_artist_list_item_vertical_margin">4dp</dimen>
+    <dimen name="card_artist_list_item_horizontal_margin">2dp</dimen>
+    <dimen name="image_artist_list_item_size">144dp</dimen>
+    <dimen name="artist_list_item_info_horizontal_padding">8dp</dimen>
+    <dimen name="artist_list_item_info_vertical_padding">4dp</dimen>
+
+    <!-- ============================== -->
+    <!-- FOR THE ARTIST DETAIL ACTIVITY -->
+    <!-- ============================== -->
+    <dimen name="cl_artist_detail_info_padding">8dp</dimen>
+    <dimen name="cl_artist_detail_album_vertical_padding">8dp</dimen>
+    <dimen name="cl_artist_detail_album_horizontal_padding">4dp</dimen>
+    <dimen name="artist_detail_album_item_spacing">8dp</dimen>
+    <dimen name="artist_detail_album_horizontal_margin">8dp</dimen>
+    <dimen name="text_artist_detail_album_year_margin_top">2dp</dimen>
+    <dimen name="imgbtn_artist_detail_album_size">48dp</dimen>
+    <dimen name="divider_artist_detail_album_info_songs_height">1dp</dimen>
+    <dimen name="divider_artist_detail_album_info_songs_margin">8dp</dimen>
+    <dimen name="artist_detail_track_spacing">8dp</dimen>
+    <dimen name="text_artist_detail_track_title_margin_left">12dp</dimen>
+    <dimen name="text_artist_detail_track_length_margin_right">16dp</dimen>
+    <dimen name="artist_detail_track_horizontal_margin">8dp</dimen>
+    <dimen name="artist_detail_track_content_padding">4dp</dimen>
+
+    <!-- ================================ -->
+    <!-- FOR THE PLAY QUEUE LIST FRAGMENT -->
+    <!-- ================================ -->
+    <dimen name="content_play_queue_list_vertical_padding">16dp</dimen>
+    <dimen name="guideline_play_queue_list_horizontal_keyline">16dp</dimen>
+    <dimen name="card_play_queue_list_corner_radius">8dp</dimen>
+    <dimen name="card_play_queue_list_item_vertical_margin">4dp</dimen>
+    <dimen name="card_play_queue_list_item_horizontal_margin">2dp</dimen>
+    <dimen name="image_play_queue_list_item_size">144dp</dimen>
+    <dimen name="card_play_queue_list_item_title_padding">8dp</dimen>
+    <dimen name="cl_play_queue_detail_info_padding">8dp</dimen>
+
+    <!-- ================================== -->
+    <!-- FOR THE PLAY QUEUE DETAIL ACTIVITY -->
+    <!-- ================================== -->
+    <dimen name="play_queue_detail_track_spacing">8dp</dimen>
+    <dimen name="play_queue_detail_track_horizontal_margin">8dp</dimen>
+    <dimen name="text_play_queue_detail_track_length_margin_right">8dp</dimen>
+    <dimen name="imgbtn_play_queue_detail_track_size">48dp</dimen>
+    <dimen name="text_play_queue_detail_track_artists_margin_top">1dp</dimen>
+
+    <!-- ============================= -->
+    <!-- FOR THE JUKEBOX LIST ACTIVITY -->
+    <!-- ============================= -->
+    <dimen name="content_jukebox_list_vertical_padding">16dp</dimen>
+    <dimen name="guideline_jukebox_list_horizontal_keyline">16dp</dimen>
+    <dimen name="card_jukebox_list_corner_radius">8dp</dimen>
+    <dimen name="card_jukebox_list_item_vertical_margin">4dp</dimen>
+    <dimen name="card_jukebox_list_item_horizontal_margin">2dp</dimen>
+    <dimen name="image_jukebox_list_item_size">144dp</dimen>
+    <dimen name="card_jukebox_list_item_title_padding">8dp</dimen>
+
+    <!-- =============================== -->
+    <!-- FOR THE JUKEBOX DETAIL ACTIVITY -->
+    <!-- =============================== -->
+    <dimen name="cl_jukebox_detail_info_padding">8dp</dimen>
+    <dimen name="jukebox_detail_track_spacing">8dp</dimen>
+    <dimen name="jukebox_detail_track_horizontal_margin">8dp</dimen>
+    <dimen name="text_jukebox_detail_track_length_margin_right">16dp</dimen>
+    <dimen name="text_jukebox_detail_track_artists_margin_top">1dp</dimen>
+
+    <!-- ================================================== -->
+    <!-- FOR THE JUKEBOX DETAIL PAYMENT BOTTOM SHEET DIALOG -->
+    <!-- ================================================== -->
+    <dimen name="cl_jukebox_detail_payment_content_padding">8dp</dimen>
+    <dimen name="divider_jukebox_detail_payment_header_info_height">1dp</dimen>
+    <dimen name="text_jukebox_detail_payment_song_count_margin_top">4dp</dimen>
+    <dimen name="jukebox_detail_payment_vertical_margin">8dp</dimen>
+    <dimen name="jukebox_detail_payment_horizontal_margin">8dp</dimen>
+
+    <!-- =========================== -->
+    <!-- FOR THE BOTTOM SHEET PLAYER -->
+    <!-- =========================== -->
+    <dimen name="bottom_sheet_player_peek_height">56dp</dimen>
+    <dimen name="seek_player_collapsed_height">12dp</dimen>
+    <dimen name="seek_player_collapsed_no_padding">0dp</dimen>
+    <dimen name="image_player_collapsed_cover_size">40dp</dimen>
+    <dimen name="player_collapsed_horizontal_margin">8dp</dimen>
+    <dimen name="text_player_collapsed_song_artist_margin_left">4dp</dimen>
+    <dimen name="imgbtn_player_collapsed_size">48dp</dimen>
+    <dimen name="text_player_full_song_artists_margin_top">2dp</dimen>
+    <dimen name="player_full_horizontal_margin">16dp</dimen>
+    <dimen name="player_full_vertical_margin">24dp</dimen>
+    <dimen name="imgbtn_player_full_extra_controls_size">36dp</dimen>
+    <dimen name="seek_player_full_horizontal_padding">32dp</dimen>
+    <dimen name="fab_player_full_play_pause_size">56dp</dimen>
+    <dimen name="fab_player_full_play_pause_custom_size">36dp</dimen>
+    <dimen name="imgbtn_player_full_controls_size">48dp</dimen>
+    <dimen name="player_full_controls_horizontal_margin">8dp</dimen>
+
+    <!-- ====================== -->
+    <!-- FOR THE ABOUT ACTIVITY -->
+    <!-- ====================== -->
+    <dimen name="card_about_info_corner_radius">8dp</dimen>
+    <dimen name="card_about_info_elevation">6dp</dimen>
+    <dimen name="scrollview_about_content_padding">12dp</dimen>
+    <dimen name="card_about_internal_content_margin">12dp</dimen>
+    <dimen name="text_about_content_title_size">36sp</dimen>
+    <dimen name="text_about_content_size">16sp</dimen>
+    <dimen name="image_about_bio_icon_size">56dp</dimen>
+
+</resources>

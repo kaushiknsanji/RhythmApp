@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.kaushiknsanji.rhythm.ui.home.HomeFragment">
+
+    <!-- Custom Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_behavior="com.example.kaushiknsanji.rhythm.extensions.BottomSheetAwareAppBarBehavior">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_all_hero_size"
+            android:minHeight="?attr/actionBarSize"
+            app:contentScrim="@color/homeToolbarContentColor"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@color/homeStatusBarColor"
+            app:titleEnabled="true">
+
+            <ImageView
+                style="@style/AllHeroImageStyle"
+                android:fitsSystemWindows="true"
+                app:srcCompat="@drawable/ic_all_app_icon" />
+
+            <ImageView style="@style/AllHeroImageScrimTopStyle" />
+
+            <ImageView style="@style/AllHeroImageScrimBottomStyle" />
+
+            <include
+                android:id="@+id/include_toolbar_home"
+                layout="@layout/layout_all_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Content of the Fragment -->
+    <include layout="@layout/layout_home_content" />
+
+    <!-- Player Bottom Sheet -->
+    <include layout="@layout/layout_all_player" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Contains static information used by JukeboxListActivity and JukeboxDetailActivity -->
+
+    <!-- List of Jukeboxes -->
+    <string name="jukebox_1_popular_hits">Popular Hits</string>
+    <string name="jukebox_2_country_music">Country Music</string>
+    <string name="jukebox_3_metal_music">Metal Music</string>
+    <string name="jukebox_4_rock_music">Rock Music</string>
+    <string name="jukebox_5_classic_music">Classic Music</string>
+    <string name="jukebox_6_folk_music">Folk Music</string>
+
+    <!-- List of Songs shown in all Jukeboxes -->
+    <string name="jukebox_song_1_track_title">NASA</string>
+    <string name="jukebox_song_1_track_album">Thank U, Next</string>
+    <string name="jukebox_song_1_track_artists">Ariana Grande</string>
+    <string name="jukebox_song_2_track_title">Talk</string>
+    <string name="jukebox_song_2_track_album">Free Spirit</string>
+    <string name="jukebox_song_2_track_artists">Khalid</string>
+    <string name="jukebox_song_3_track_title">Waste It On Me</string>
+    <string name="jukebox_song_3_track_album">Neon Future III</string>
+    <string name="jukebox_song_3_track_artists">Steve Aoki, BTS</string>
+    <string name="jukebox_song_4_track_title">Sunflower</string>
+    <string name="jukebox_song_4_track_album">Spider-Man: Into the Spider-Verse</string>
+    <string name="jukebox_song_4_track_artists">Post Malone, Swae Lee</string>
+    <string name="jukebox_song_5_track_title">Bad Liar</string>
+    <string name="jukebox_song_5_track_album">Origins</string>
+    <string name="jukebox_song_5_track_artists">Imagine Dragons</string>
+    <string name="jukebox_song_6_track_title">This Feeling</string>
+    <string name="jukebox_song_6_track_album">Sick Boy</string>
+    <string name="jukebox_song_6_track_artists">The Chainsmokers, Kelsea Ballerini</string>
+    <string name="jukebox_song_7_track_title">Say My Name</string>
+    <string name="jukebox_song_7_track_album">7</string>
+    <string name="jukebox_song_7_track_artists">David Guetta, Bebe Rexha, J. Balvin</string>
+    <string name="jukebox_song_8_track_title">Diamond Heart</string>
+    <string name="jukebox_song_8_track_album">Different World</string>
+    <string name="jukebox_song_8_track_artists">Alan Walker, Sophia Somajo</string>
+    <string name="jukebox_song_9_track_title">Let You Love Me</string>
+    <string name="jukebox_song_9_track_album">Phoenix</string>
+    <string name="jukebox_song_9_track_artists">Rita Ora</string>
+    <string name="jukebox_song_10_track_title">Shallow</string>
+    <string name="jukebox_song_10_track_album">A Star Is Born</string>
+    <string name="jukebox_song_10_track_artists">Lady Gaga, Bradley Cooper</string>
+
+    <!-- Fixed Song Count for each Jukebox -->
+    <string name="jukebox_total_song_count">10 Songs</string>
+
+    <!-- Fixed Amount for each Jukebox -->
+    <string name="jukebox_order_amount">₹ 20.0</string>
+
+</resources>

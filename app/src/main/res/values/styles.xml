@@ -1,0 +1,914 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Style for Custom App Bar -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Style for Popups in Custom App Bar -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- ==================================== -->
+    <!-- COMMON AND/OR BASE STYLES OF THE APP -->
+    <!-- ==================================== -->
+
+    <!-- Base Style for the CardViews -->
+    <style name="BaseCardLightStyle" parent="CardView.Light">
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">@dimen/card_all_corner_radius</item>
+    </style>
+
+    <!-- Base Style for the Small Sized Texts -->
+    <style name="BaseSmallTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <!-- Base Style for the Small Sized Texts with Theme Inverse Color -->
+    <style name="BaseSmallTextInverseStyle" parent="BaseSmallTextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+    </style>
+
+    <!-- Common Style for CardViews used for Explanation -->
+    <style name="AllExplanationCardStyle" parent="BaseCardLightStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Common Style used for the container of Explanation CardViews -->
+    <style name="AllExplanationContainerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/card_all_explanation_content_padding</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Common Style for Explanation Text shown in Explanation CardViews -->
+    <style name="AllExplanationTextStyle" parent="ConstraintCenterInParentStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableTop">@drawable/ic_all_explanation</item>
+        <item name="android:drawablePadding">@dimen/text_all_explanation_drawable_padding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+    </style>
+
+    <!-- Style for Hero Image or Backdrop Image shown in Collapsing Toolbar container -->
+    <style name="AllHeroImageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="layout_collapseMode">parallax</item>
+    </style>
+
+    <!-- Style for the Top Scrim shown on Hero Image -->
+    <style name="AllHeroImageScrimTopStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/shape_all_scrim_top</item>
+        <item name="android:layout_gravity">top</item>
+    </style>
+
+    <!-- Style for the Bottom Scrim shown on Hero Image -->
+    <style name="AllHeroImageScrimBottomStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/shape_all_scrim_bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <!-- Common Style of Bullet Text -->
+    <style name="AllBulletMarkTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/all_bullet_mark</item>
+    </style>
+
+    <!-- Derived Style of Bullet Text with Small Text Size -->
+    <style name="AllBulletMarkTextStyle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <!-- Derived Style of Bullet Text with Small Text Size and Theme Inverse Text Color -->
+    <style name="AllBulletMarkTextStyle.SmallInverse">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+    </style>
+
+    <!-- Common Style used for the Anchored Play FloatingActionButtons -->
+    <style name="AllToolbarAnchoredFabPlayStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/fab_material_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/fab_material_margin
+        </item>
+        <item name="srcCompat">@drawable/ic_all_play_white</item>
+        <item name="fabSize">mini</item>
+        <item name="layout_anchorGravity">bottom|right|end</item>
+        <item name="layout_behavior">
+            com.example.kaushiknsanji.rhythm.extensions.ScrollAwareAnchoredFabBehavior
+        </item>
+    </style>
+
+    <!-- ================================== -->
+    <!-- STYLES USED FOR CONSTRAINT LAYOUTS -->
+    <!-- ================================== -->
+
+    <!-- Style to align the View component under ConstraintLayout in center_horizontal format -->
+    <style name="ConstraintCenterHorizontalStyle">
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <!-- Style to align the View component under ConstraintLayout to the Top in center_horizontal format -->
+    <style name="ConstraintTopCenterHorizontalStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <!-- Style to align the View component under ConstraintLayout to the Bottom in center_horizontal format -->
+    <style name="ConstraintBottomCenterHorizontalStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    <!-- Style to align the View component under ConstraintLayout to the complete Center of its Parent -->
+    <style name="ConstraintCenterInParentStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    <!-- Style to align the View component under ConstraintLayout in center_vertical format -->
+    <style name="ConstraintCenterVerticalStyle">
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    <!-- Style to align the View component under ConstraintLayout to the Left in center_vertical format -->
+    <style name="ConstraintLeftCenterVerticalStyle" parent="ConstraintCenterVerticalStyle">
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <!-- Style to align the View component under ConstraintLayout to the Right in center_vertical format -->
+    <style name="ConstraintRightCenterVerticalStyle" parent="ConstraintCenterVerticalStyle">
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <!-- Style used for Constrained Texts -->
+    <style name="ConstrainedTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constrainedWidth">true</item>
+    </style>
+
+    <!-- Derived Style of Constrained Texts limited to Single Line -->
+    <style name="ConstrainedTextStyle.SingleLine">
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Derived Style of Constrained Texts limited to Single Line and Left aligned -->
+    <style name="ConstrainedTextStyle.SingleLine.LeftAlign">
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <!-- Derived Style of Constrained Texts limited to Single Line with ellipse at end -->
+    <style name="ConstrainedTextStyle.SingleLine.Ellipsize">
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Derived Style of Constrained Texts limited to Single Line with ellipse at end and Left aligned -->
+    <style name="ConstrainedTextStyle.SingleLine.Ellipsize.LeftAlign">
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <!-- Derived Style of Constrained Texts with Marquee animation -->
+    <style name="ConstrainedTextStyle.Marquee">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Derived Style of Constrained Texts which is left aligned along with Marquee animation -->
+    <style name="ConstrainedTextStyle.Marquee.LeftAlign">
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <!-- ====================================== -->
+    <!-- STYLES USED FOR HOME ACTIVITY/FRAGMENT -->
+    <!-- ====================================== -->
+    <style name="HomeDrawerMenuTitleTextTheme">
+        <item name="android:textColorSecondary">@color/homeDrawerMenuTitleTextColor</item>
+    </style>
+
+    <style name="HomeDrawerNavigationViewStyle" parent="Widget.Design.NavigationView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">@color/homeDrawerMenuBackgroundColor</item>
+        <item name="itemBackground">?attr/selectableItemBackground</item>
+        <item name="itemTextColor">@color/state_home_drawer_nav_item_text_color</item>
+        <item name="itemIconTint">@color/state_home_drawer_nav_item_text_color</item>
+    </style>
+
+    <style name="HomeItemCardStyle" parent="BaseCardLightStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/card_home_item_vertical_margin</item>
+        <item name="cardCornerRadius">@dimen/card_home_corner_radius</item>
+    </style>
+
+    <style name="HomeItemImageStyle" parent="ConstraintTopCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/image_home_item_size</item>
+        <item name="android:layout_height">@dimen/image_home_item_size</item>
+    </style>
+
+    <style name="HomeItemTitleStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/card_home_item_title_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <!-- =================================== -->
+    <!-- STYLES USED FOR ALBUM LIST FRAGMENT -->
+    <!-- =================================== -->
+    <style name="AlbumListItemCardStyle" parent="BaseCardLightStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/card_album_list_item_vertical_margin</item>
+        <item name="cardCornerRadius">@dimen/card_album_list_corner_radius</item>
+    </style>
+
+    <style name="AlbumListItemImageStyle" parent="ConstraintTopCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/image_album_list_item_size</item>
+        <item name="android:layout_height">@dimen/image_album_list_item_size</item>
+    </style>
+
+    <style name="AlbumListItemTitleStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/card_album_list_item_title_padding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- ===================================== -->
+    <!-- STYLES USED FOR ALBUM DETAIL ACTIVITY -->
+    <!-- ===================================== -->
+    <style name="AlbumDetailTrackClickableStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">@dimen/match_constraint_0dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AlbumDetailTrackNumberStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/album_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/album_detail_track_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium.Inverse</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="AlbumDetailTrackTitleStyle" parent="ConstrainedTextStyle.SingleLine.Ellipsize.LeftAlign">
+        <item name="android:layout_marginTop">@dimen/album_detail_track_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/text_album_detail_track_title_margin_left
+        </item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/text_album_detail_track_title_margin_left
+        </item>
+        <item name="android:layout_marginRight">@dimen/album_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/album_detail_track_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="AlbumDetailTrackArtistsStyle" parent="ConstrainedTextStyle.SingleLine.Ellipsize.LeftAlign">
+        <item name="android:layout_marginTop">@dimen/text_album_detail_track_artists_margin_top
+        </item>
+        <item name="android:layout_marginRight">@dimen/album_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/album_detail_track_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+    </style>
+
+    <style name="AlbumDetailTrackImageButtonsStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/imgbtn_album_detail_track_size</item>
+        <item name="android:layout_height">@dimen/imgbtn_album_detail_track_size</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="AlbumDetailTrackLengthStyle" parent="BaseSmallTextInverseStyle">
+        <item name="android:layout_marginRight">@dimen/text_album_detail_track_length_margin_right
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/text_album_detail_track_length_margin_right
+        </item>
+        <item name="android:text">@string/all_song_duration</item>
+    </style>
+
+    <!-- ================================== -->
+    <!-- STYLES USED FOR SONG LIST FRAGMENT -->
+    <!-- ================================== -->
+    <style name="SongListTrackClickableStyle" parent="AlbumDetailTrackClickableStyle" />
+
+    <style name="SongListTrackCoverStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">@dimen/match_constraint_0dp</item>
+        <item name="srcCompat">@drawable/ic_all_album</item>
+        <item name="android:layout_marginLeft">@dimen/song_list_track_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/song_list_track_horizontal_margin
+        </item>
+        <item name="layout_constraintDimensionRatio">1</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="SongListTrackTitleStyle" parent="AlbumDetailTrackTitleStyle">
+        <item name="android:layout_marginTop">@dimen/song_list_track_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/song_list_track_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/song_list_track_horizontal_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/song_list_track_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/song_list_track_horizontal_margin
+        </item>
+    </style>
+
+    <style name="SongListTrackArtistsStyle" parent="AlbumDetailTrackArtistsStyle">
+        <item name="android:layout_marginTop">@dimen/text_song_list_track_artists_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/song_list_track_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/song_list_track_horizontal_margin
+        </item>
+    </style>
+
+    <style name="SongListTrackImageButtonsStyle" parent="AlbumDetailTrackImageButtonsStyle">
+        <item name="android:layout_width">@dimen/imgbtn_song_list_track_size</item>
+        <item name="android:layout_height">@dimen/imgbtn_song_list_track_size</item>
+    </style>
+
+    <style name="SongListTrackLengthStyle" parent="AlbumDetailTrackLengthStyle">
+        <item name="android:layout_marginRight">@dimen/text_song_list_track_length_margin_right
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/text_song_list_track_length_margin_right
+        </item>
+    </style>
+
+    <!-- ==================================== -->
+    <!-- STYLES USED FOR ARTIST LIST FRAGMENT -->
+    <!-- ==================================== -->
+    <style name="ArtistListItemCardStyle" parent="AlbumListItemCardStyle">
+        <item name="android:layout_marginTop">@dimen/card_artist_list_item_vertical_margin</item>
+        <item name="cardCornerRadius">@dimen/card_artist_list_corner_radius</item>
+    </style>
+
+    <style name="ArtistListItemImageStyle" parent="ConstraintTopCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/image_artist_list_item_size</item>
+        <item name="android:layout_height">@dimen/image_artist_list_item_size</item>
+    </style>
+
+    <style name="ArtistListItemInfoBackgroundStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">@dimen/match_constraint_0dp</item>
+    </style>
+
+    <style name="ArtistListItemNameStyle" parent="ConstrainedTextStyle.SingleLine.Ellipsize.LeftAlign">
+        <item name="android:paddingTop">@dimen/artist_list_item_info_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/artist_list_item_info_horizontal_padding</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/artist_list_item_info_horizontal_padding
+        </item>
+        <item name="android:paddingRight">@dimen/artist_list_item_info_horizontal_padding</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/artist_list_item_info_horizontal_padding
+        </item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="ArtistListItemNameStyle.TextMedium">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="ArtistListItemNameStyle.TextMediumInverse">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium.Inverse</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="ArtistListItemAlbumCountStyle" parent="ArtistListItemNameStyle">
+        <item name="android:paddingBottom">@dimen/artist_list_item_info_vertical_padding</item>
+    </style>
+
+    <style name="ArtistListItemAlbumCountStyle.TextSmall">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="ArtistListItemAlbumCountStyle.TextSmallInverse">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+    </style>
+
+    <!-- ====================================== -->
+    <!-- STYLES USED FOR ARTIST DETAIL ACTIVITY -->
+    <!-- ====================================== -->
+    <style name="ArtistDetailAlbumCardStyle" parent="BaseCardLightStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/artist_detail_album_item_spacing</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="ArtistDetailAlbumCoverStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">@dimen/match_constraint_0dp</item>
+        <item name="srcCompat">@drawable/ic_all_album</item>
+        <item name="android:layout_marginLeft">@dimen/artist_detail_album_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/artist_detail_album_horizontal_margin
+        </item>
+        <item name="layout_constraintDimensionRatio">1</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="ArtistDetailAlbumContainerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_artist_detail_album_item_background</item>
+        <item name="android:paddingTop">@dimen/cl_artist_detail_album_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/cl_artist_detail_album_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/cl_artist_detail_album_horizontal_padding</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/cl_artist_detail_album_horizontal_padding
+        </item>
+        <item name="android:paddingRight">@dimen/cl_artist_detail_album_horizontal_padding</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/cl_artist_detail_album_horizontal_padding
+        </item>
+    </style>
+
+    <style name="ArtistDetailAlbumTitleStyle" parent="ConstrainedTextStyle.SingleLine.Ellipsize.LeftAlign">
+        <item name="android:layout_marginLeft">@dimen/artist_detail_album_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/artist_detail_album_horizontal_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/artist_detail_album_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/artist_detail_album_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="ArtistDetailAlbumImageButtonsStyle" parent="AlbumDetailTrackImageButtonsStyle">
+        <item name="android:layout_width">@dimen/imgbtn_artist_detail_album_size</item>
+        <item name="android:layout_height">@dimen/imgbtn_artist_detail_album_size</item>
+    </style>
+
+    <style name="ArtistDetailTrackNumberStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/artist_detail_track_content_padding</item>
+        <item name="android:paddingBottom">@dimen/artist_detail_track_content_padding</item>
+        <item name="android:layout_marginTop">@dimen/artist_detail_track_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/artist_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/artist_detail_track_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium.Inverse</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="ArtistDetailTrackTitleStyle" parent="ConstrainedTextStyle.SingleLine.Ellipsize.LeftAlign">
+        <item name="android:layout_marginLeft">@dimen/text_artist_detail_track_title_margin_left
+        </item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/text_artist_detail_track_title_margin_left
+        </item>
+        <item name="android:layout_marginRight">@dimen/artist_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/artist_detail_track_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="ArtistDetailTrackLengthStyle" parent="BaseSmallTextInverseStyle">
+        <item name="android:layout_marginRight">
+            @dimen/text_artist_detail_track_length_margin_right
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/text_artist_detail_track_length_margin_right
+        </item>
+        <item name="android:text">@string/all_song_duration</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="ArtistDetailTrackClickableStyle" parent="AlbumDetailTrackClickableStyle" />
+
+    <style name="ArtistDetailAlbumInfoSongsDividerStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">@dimen/divider_artist_detail_album_info_songs_height
+        </item>
+        <item name="android:layout_marginTop">@dimen/divider_artist_detail_album_info_songs_margin
+        </item>
+        <item name="android:layout_marginLeft">
+            @dimen/divider_artist_detail_album_info_songs_margin
+        </item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/divider_artist_detail_album_info_songs_margin
+        </item>
+        <item name="android:layout_marginRight">
+            @dimen/divider_artist_detail_album_info_songs_margin
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/divider_artist_detail_album_info_songs_margin
+        </item>
+        <item name="android:background">@android:color/holo_blue_light</item>
+    </style>
+
+    <!-- ======================================== -->
+    <!-- STYLES USED FOR PLAY QUEUE LIST FRAGMENT -->
+    <!-- ======================================== -->
+    <style name="PlayQueueListItemCardStyle" parent="AlbumListItemCardStyle">
+        <item name="android:layout_marginTop">@dimen/card_play_queue_list_item_vertical_margin
+        </item>
+        <item name="cardCornerRadius">@dimen/card_play_queue_list_corner_radius</item>
+    </style>
+
+    <style name="PlayQueueListItemImageStyle" parent="ConstraintTopCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/image_play_queue_list_item_size</item>
+        <item name="android:layout_height">@dimen/image_play_queue_list_item_size</item>
+    </style>
+
+    <style name="PlayQueueListItemTitleStyle" parent="AlbumListItemTitleStyle">
+        <item name="android:padding">@dimen/card_play_queue_list_item_title_padding</item>
+    </style>
+
+    <!-- ========================================== -->
+    <!-- STYLES USED FOR PLAY QUEUE DETAIL ACTIVITY -->
+    <!-- ========================================== -->
+    <style name="PlayQueueDetailTrackClickableStyle" parent="AlbumDetailTrackClickableStyle" />
+
+    <style name="PlayQueueDetailTrackCoverStyle" parent="SongListTrackCoverStyle">
+        <item name="android:layout_marginLeft">@dimen/play_queue_detail_track_horizontal_margin
+        </item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/play_queue_detail_track_horizontal_margin
+        </item>
+    </style>
+
+    <style name="PlayQueueDetailTrackTitleStyle" parent="AlbumDetailTrackTitleStyle">
+        <item name="android:layout_marginTop">@dimen/play_queue_detail_track_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/play_queue_detail_track_horizontal_margin
+        </item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/play_queue_detail_track_horizontal_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/play_queue_detail_track_horizontal_margin
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/play_queue_detail_track_horizontal_margin
+        </item>
+    </style>
+
+    <style name="PlayQueueDetailTrackArtistsStyle" parent="AlbumDetailTrackArtistsStyle">
+        <item name="android:layout_marginTop">
+            @dimen/text_play_queue_detail_track_artists_margin_top
+        </item>
+        <item name="android:layout_marginRight">@dimen/play_queue_detail_track_horizontal_margin
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/play_queue_detail_track_horizontal_margin
+        </item>
+    </style>
+
+    <style name="PlayQueueDetailTrackImageButtonsStyle" parent="AlbumDetailTrackImageButtonsStyle">
+        <item name="android:layout_width">@dimen/imgbtn_play_queue_detail_track_size</item>
+        <item name="android:layout_height">@dimen/imgbtn_play_queue_detail_track_size</item>
+        <item name="android:layout_marginRight">@dimen/play_queue_detail_track_horizontal_margin
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/play_queue_detail_track_horizontal_margin
+        </item>
+    </style>
+
+    <style name="PlayQueueDetailTrackLengthStyle" parent="AlbumDetailTrackLengthStyle">
+        <item name="android:layout_marginRight">
+            @dimen/text_play_queue_detail_track_length_margin_right
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/text_play_queue_detail_track_length_margin_right
+        </item>
+    </style>
+
+    <!-- ===================================== -->
+    <!-- STYLES USED FOR JUKEBOX LIST ACTIVITY -->
+    <!-- ===================================== -->
+    <style name="JukeboxListItemCardStyle" parent="AlbumListItemCardStyle">
+        <item name="android:layout_marginTop">@dimen/card_jukebox_list_item_vertical_margin</item>
+        <item name="cardCornerRadius">@dimen/card_jukebox_list_corner_radius</item>
+    </style>
+
+    <style name="JukeboxListItemImageStyle" parent="ConstraintTopCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/image_jukebox_list_item_size</item>
+        <item name="android:layout_height">@dimen/image_jukebox_list_item_size</item>
+    </style>
+
+    <style name="JukeboxListItemTitleStyle" parent="AlbumListItemTitleStyle">
+        <item name="android:padding">@dimen/card_jukebox_list_item_title_padding</item>
+    </style>
+
+    <style name="JukeboxListItemTitleStyle.TextInverse">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium.Inverse</item>
+    </style>
+
+    <!-- ======================================= -->
+    <!-- STYLES USED FOR JUKEBOX DETAIL ACTIVITY -->
+    <!-- ======================================= -->
+    <style name="JukeboxDetailTrackClickableStyle" parent="AlbumDetailTrackClickableStyle" />
+
+    <style name="JukeboxDetailTrackCoverStyle" parent="SongListTrackCoverStyle">
+        <item name="android:layout_marginLeft">@dimen/jukebox_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/jukebox_detail_track_horizontal_margin
+        </item>
+    </style>
+
+    <style name="JukeboxDetailTrackTitleStyle" parent="AlbumDetailTrackTitleStyle">
+        <item name="android:layout_marginTop">@dimen/jukebox_detail_track_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/jukebox_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/jukebox_detail_track_horizontal_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/jukebox_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/jukebox_detail_track_horizontal_margin
+        </item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="JukeboxDetailTrackArtistsStyle" parent="AlbumDetailTrackArtistsStyle">
+        <item name="android:layout_marginTop">@dimen/text_jukebox_detail_track_artists_margin_top
+        </item>
+        <item name="android:layout_marginRight">@dimen/jukebox_detail_track_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/jukebox_detail_track_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="JukeboxDetailTrackLengthStyle" parent="AlbumDetailTrackLengthStyle">
+        <item name="android:layout_marginRight">
+            @dimen/text_jukebox_detail_track_length_margin_right
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/text_jukebox_detail_track_length_margin_right
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <!-- ========================================================== -->
+    <!-- STYLES USED FOR JUKEBOX DETAIL PAYMENT BOTTOM SHEET DIALOG -->
+    <!-- ========================================================== -->
+    <style name="JukeboxDetailPaymentHeaderInfoDividerStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">
+            @dimen/divider_jukebox_detail_payment_header_info_height
+        </item>
+        <item name="android:layout_marginTop">@dimen/jukebox_detail_payment_vertical_margin</item>
+        <item name="android:background">@color/jukeboxDetailPaymentHeaderInfoDividerColor</item>
+    </style>
+
+    <style name="JukeboxDetailPaymentTypeTitleStyle" parent="ConstrainedTextStyle.SingleLine.Ellipsize.LeftAlign">
+        <item name="android:layout_marginTop">@dimen/jukebox_detail_payment_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/jukebox_detail_payment_horizontal_margin
+        </item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/jukebox_detail_payment_horizontal_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/jukebox_detail_payment_horizontal_margin
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/jukebox_detail_payment_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+    </style>
+
+    <style name="JukeboxDetailPaymentTypeImageStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">@dimen/match_constraint_0dp</item>
+        <item name="layout_constraintDimensionRatio">1</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="JukeboxDetailPaymentButtonStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/jukebox_detail_payment_vertical_margin</item>
+        <item name="android:background">@drawable/state_jukebox_detail_payment_button_background
+        </item>
+    </style>
+
+    <style name="JukeboxDetailPaymentButtonStyle.Pay">
+        <item name="android:text">@string/jukebox_detail_payment_btn_label_pay</item>
+        <item name="android:textColor">@color/state_jukebox_detail_payment_button_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- =================================== -->
+    <!-- STYLES USED FOR BOTTOM SHEET PLAYER -->
+    <!-- =================================== -->
+    <style name="PlayerCollapsedImageButtonsStyle" parent="AlbumDetailTrackImageButtonsStyle">
+        <item name="android:layout_width">@dimen/imgbtn_player_collapsed_size</item>
+        <item name="android:layout_height">@dimen/imgbtn_player_collapsed_size</item>
+    </style>
+
+    <style name="PlayerCollapsedSeekBarStyle" parent="ConstraintCenterHorizontalStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:max">@integer/all_song_duration</item>
+    </style>
+
+    <style name="PlayerFullSeekBarStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/seek_player_full_horizontal_padding</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/seek_player_full_horizontal_padding
+        </item>
+        <item name="android:paddingRight">@dimen/seek_player_full_horizontal_padding</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/seek_player_full_horizontal_padding
+        </item>
+        <item name="android:layout_marginTop">@dimen/player_full_vertical_margin</item>
+        <item name="android:focusable">true</item>
+        <item name="android:max">@integer/all_song_duration</item>
+    </style>
+
+    <style name="PlayerFullExtraControlsImageButtonsStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/imgbtn_player_full_extra_controls_size</item>
+        <item name="android:layout_height">@dimen/imgbtn_player_full_extra_controls_size</item>
+        <item name="android:layout_marginRight">@dimen/player_full_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_horizontal_margin
+        </item>
+    </style>
+
+    <style name="PlayerFullExtraControlsStateImageButtonsStyle">
+        <item name="android:layout_width">@dimen/imgbtn_player_full_extra_controls_size</item>
+        <item name="android:layout_height">@dimen/imgbtn_player_full_extra_controls_size</item>
+        <item name="android:layout_marginRight">@dimen/player_full_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_horizontal_margin
+        </item>
+        <item name="android:background">@drawable/shape_player_state_buttons_background</item>
+    </style>
+
+    <style name="PlayerFullFabPlayStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_width">@dimen/fab_player_full_play_pause_size</item>
+        <item name="android:layout_height">@dimen/fab_player_full_play_pause_size</item>
+        <item name="android:layout_marginTop">@dimen/player_full_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/player_full_controls_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_controls_horizontal_margin
+        </item>
+        <item name="android:layout_marginLeft">@dimen/player_full_controls_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_controls_horizontal_margin
+        </item>
+        <item name="srcCompat">@drawable/ic_all_play_white_animatable</item>
+        <item name="fabCustomSize">@dimen/fab_player_full_play_pause_custom_size</item>
+    </style>
+
+    <style name="PlayerFullControlsImageButtonsStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/imgbtn_player_full_controls_size</item>
+        <item name="android:layout_height">@dimen/imgbtn_player_full_controls_size</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="PlayerFullControlsImageButtonsStyle.ForwardNext">
+        <item name="android:layout_marginRight">@dimen/player_full_controls_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_controls_horizontal_margin
+        </item>
+    </style>
+
+    <style name="PlayerFullControlsImageButtonsStyle.RewindPrevious">
+        <item name="android:layout_marginLeft">@dimen/player_full_controls_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_controls_horizontal_margin
+        </item>
+    </style>
+
+    <style name="PlayerFullAlbumTitleStyle" parent="ConstrainedTextStyle">
+        <item name="android:layout_marginRight">@dimen/player_full_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_horizontal_margin
+        </item>
+        <item name="android:layout_marginLeft">@dimen/player_full_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_horizontal_margin
+        </item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium.Inverse</item>
+    </style>
+
+    <style name="PlayerFullTrackArtistsStyle" parent="ConstrainedTextStyle">
+        <item name="android:layout_marginTop">@dimen/text_player_full_song_artists_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/player_full_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_horizontal_margin
+        </item>
+        <item name="android:layout_marginLeft">@dimen/player_full_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_horizontal_margin
+        </item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead.Inverse</item>
+    </style>
+
+    <style name="PlayerFullSongElapsedTimeStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/player_full_horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_horizontal_margin
+        </item>
+        <item name="android:textColor">@color/playerElapsedTimeTextColor</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+    </style>
+
+    <style name="PlayerFullSongDurationStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/player_full_horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/player_full_horizontal_margin
+        </item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+    </style>
+
+    <!-- ============================== -->
+    <!-- STYLES USED FOR ABOUT ACTIVITY -->
+    <!-- ============================== -->
+    <!-- Child Style of 'CardView' used for the info content in the About Activity -->
+    <style name="AboutInfoCardStyle" parent="CardView">
+        <item name="cardCornerRadius">@dimen/card_about_info_corner_radius</item>
+        <item name="cardBackgroundColor">@color/aboutInfoCardBackgroundColor</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardElevation">@dimen/card_about_info_elevation</item>
+    </style>
+
+    <!-- Style for the Clickable ImageViews shown in the About Activity -->
+    <style name="AboutClickableImageViewStyle">
+        <item name="android:layout_width">@dimen/image_about_bio_icon_size</item>
+        <item name="android:layout_height">@dimen/image_about_bio_icon_size</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Style for the Text content shown in the About Activity -->
+    <style name="AboutContentTextStyle">
+        <item name="android:layout_width">@dimen/match_constraint_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/card_about_internal_content_margin</item>
+        <item name="android:textSize">@dimen/text_about_content_size</item>
+        <item name="android:textColor">@color/aboutContentTextColor</item>
+    </style>
+
+</resources>

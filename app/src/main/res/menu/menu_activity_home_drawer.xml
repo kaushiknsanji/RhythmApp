@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/title_home" />
+        <item
+            android:id="@+id/nav_item_album"
+            android:icon="@drawable/ic_nav_album"
+            android:title="@string/title_albums" />
+        <item
+            android:id="@+id/nav_item_artist"
+            android:icon="@drawable/ic_nav_artist"
+            android:title="@string/title_artists" />
+        <item
+            android:id="@+id/nav_item_song"
+            android:icon="@drawable/ic_nav_song"
+            android:title="@string/title_songs" />
+        <item
+            android:id="@+id/nav_item_playlist"
+            android:icon="@drawable/ic_nav_playlist"
+            android:title="@string/title_playlists" />
+    </group>
+
+    <item
+        android:id="@+id/nav_services_title"
+        android:title="@string/title_drawer_menu_services">
+        <menu>
+            <item
+                android:id="@+id/nav_item_jukebox"
+                android:icon="@drawable/ic_nav_jukebox"
+                android:title="@string/title_jukebox" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_settings_title"
+        android:title="@string/title_drawer_menu_settings">
+        <menu>
+            <item
+                android:id="@+id/nav_item_app_settings"
+                android:icon="@drawable/ic_nav_app_settings"
+                android:title="@string/title_app_settings" />
+            <item
+                android:id="@+id/nav_item_eq_settings"
+                android:icon="@drawable/ic_nav_eq_settings"
+                android:title="@string/title_eq_settings" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_info_title"
+        android:title="@string/title_drawer_menu_information">
+        <menu>
+            <item
+                android:id="@+id/nav_item_about"
+                android:icon="@drawable/ic_nav_about"
+                android:title="@string/title_about" />
+        </menu>
+    </item>
+
+</menu>

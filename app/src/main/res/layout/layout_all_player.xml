@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_all_player_background"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/bottom_sheet_player_peek_height"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <!-- Custom Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="@dimen/app_bar_no_elevation">
+
+        <!-- Collapsed Player -->
+        <include layout="@layout/layout_player_collapsed" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:visibility="invisible"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_player_song_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="7 rings" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Complete Expanded Player -->
+    <include layout="@layout/layout_player_full" />
+
+</android.support.design.widget.CoordinatorLayout>

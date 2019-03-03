@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.kaushiknsanji.rhythm.ui.jukebox.JukeboxDetailActivity">
+
+    <!-- Custom Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_behavior="com.example.kaushiknsanji.rhythm.extensions.BottomSheetAwareAppBarBehavior">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_jukebox_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_all_hero_size"
+            android:minHeight="?attr/actionBarSize"
+            app:contentScrim="@color/jukeboxDetailToolbarContentColor"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@color/jukeboxDetailStatusBarColor"
+            app:titleEnabled="true">
+
+            <ImageView
+                android:id="@+id/image_jukebox_detail_type"
+                style="@style/AllHeroImageStyle"
+                android:fitsSystemWindows="true"
+                app:srcCompat="@drawable/ic_all_jukebox" />
+
+            <ImageView style="@style/AllHeroImageScrimTopStyle" />
+
+            <ImageView style="@style/AllHeroImageScrimBottomStyle" />
+
+            <include
+                android:id="@+id/include_toolbar_jukebox_detail"
+                layout="@layout/layout_all_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <!-- Toolbar Top Banner -->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cl_jukebox_detail_info_padding">
+
+            <TextView
+                android:id="@+id/text_jukebox_detail_song_count"
+                style="@style/BaseSmallTextStyle"
+                android:text="@string/jukebox_total_song_count"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Anchored FAB Play -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_jukebox_detail_play"
+        style="@style/AllToolbarAnchoredFabPlayStyle"
+        app:layout_anchor="@+id/collapsing_toolbar_jukebox_detail" />
+
+    <!-- Content of the Activity -->
+    <include layout="@layout/layout_jukebox_detail_content" />
+
+    <!-- Player Bottom Sheet -->
+    <include layout="@layout/layout_all_player" />
+
+</android.support.design.widget.CoordinatorLayout>

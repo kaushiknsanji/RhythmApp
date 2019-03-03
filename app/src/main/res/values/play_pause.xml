@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Resources for Play-Pause Drawable Animation -->
+
+    <!-- Geometry -->
+    <integer name="play_pause_viewport_width">24</integer>
+    <integer name="play_pause_viewport_height">24</integer>
+    <integer name="play_pause_viewport_center_x">12</integer>
+    <integer name="play_pause_viewport_center_y">12</integer>
+    <string name="path_data_play" translatable="false">M6,5 l12,7 l0,0 l-12,0z M6,12 l12,0 l0,0 l-12,7z</string>
+    <string name="path_data_pause" translatable="false">M5,6 l14,0 l0,4 l-14,0z M5,14 l14,0 l0,4 l-14,0z</string>
+
+    <!-- Names -->
+    <string name="path_name_play" translatable="false">play</string>
+    <string name="path_name_pause" translatable="false">pause</string>
+    <string name="group_play_pause" translatable="false">groupPlayPause</string>
+    <string name="group_pause_play" translatable="false">groupPausePlay</string>
+
+    <!-- Timing -->
+    <integer name="duration_play_pause">400</integer>
+
+</resources>

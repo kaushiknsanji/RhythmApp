@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AllExplanationCardStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Explanation Text Container -->
+    <android.support.constraint.ConstraintLayout style="@style/AllExplanationContainerStyle">
+
+        <!-- Explanation Text -->
+        <TextView
+            android:id="@+id/text_all_explanation"
+            style="@style/AllExplanationTextStyle"
+            tools:text="The quick brown fox jumped over a lazy dog" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

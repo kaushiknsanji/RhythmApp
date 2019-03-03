@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="@integer/play_pause_viewport_height"
+    android:viewportWidth="@integer/play_pause_viewport_width">
+
+    <group
+        android:name="@string/group_pause_play"
+        android:pivotX="@integer/play_pause_viewport_center_x"
+        android:pivotY="@integer/play_pause_viewport_center_y"
+        android:rotation="-90">
+        <path
+            android:name="@string/path_name_pause"
+            android:fillColor="@android:color/white"
+            android:pathData="@string/path_data_pause" />
+    </group>
+
+</vector>

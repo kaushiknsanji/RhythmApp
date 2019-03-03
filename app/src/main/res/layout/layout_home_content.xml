@@ -1,0 +1,230 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_home_background"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/content_home_vertical_padding"
+        android:paddingTop="@dimen/content_home_vertical_padding">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_home_left_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/guideline_home_horizontal_keyline" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_home_right_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/guideline_home_horizontal_keyline" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_home_center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <!-- For 'Albums' -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_home_item_albums"
+            style="@style/HomeItemCardStyle"
+            android:layout_marginEnd="@dimen/card_home_item_horizontal_margin"
+            android:layout_marginRight="@dimen/card_home_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_home_center_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_home_left_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_home_center_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_home_left_vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_home_albums"
+                    style="@style/HomeItemImageStyle"
+                    app:srcCompat="@drawable/ic_all_album" />
+
+                <TextView
+                    android:id="@+id/text_home_albums_title"
+                    style="@style/HomeItemTitleStyle"
+                    android:background="@color/homeAlbumsTitleBackgroundColor"
+                    android:text="@string/title_albums"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_home_albums" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- For 'Artists' -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_home_item_artists"
+            style="@style/HomeItemCardStyle"
+            android:layout_marginLeft="@dimen/card_home_item_horizontal_margin"
+            android:layout_marginStart="@dimen/card_home_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_home_right_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_home_center_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_home_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_home_center_vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_home_artists"
+                    style="@style/HomeItemImageStyle"
+                    app:srcCompat="@drawable/ic_all_artist" />
+
+                <TextView
+                    android:id="@+id/text_home_artists_title"
+                    style="@style/HomeItemTitleStyle"
+                    android:background="@color/homeArtistsTitleBackgroundColor"
+                    android:text="@string/title_artists"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_home_artists" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- For 'Songs' -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_home_item_songs"
+            style="@style/HomeItemCardStyle"
+            android:layout_marginEnd="@dimen/card_home_item_horizontal_margin"
+            android:layout_marginRight="@dimen/card_home_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_home_center_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_home_left_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_home_center_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_home_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_home_item_albums">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_home_songs"
+                    style="@style/HomeItemImageStyle"
+                    app:srcCompat="@drawable/ic_all_song" />
+
+                <TextView
+                    android:id="@+id/text_home_songs_title"
+                    style="@style/HomeItemTitleStyle"
+                    android:background="@color/homeSongsTitleBackgroundColor"
+                    android:text="@string/title_songs"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_home_songs" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- For 'Playlists' -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_home_item_playlists"
+            style="@style/HomeItemCardStyle"
+            android:layout_marginLeft="@dimen/card_home_item_horizontal_margin"
+            android:layout_marginStart="@dimen/card_home_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_home_right_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_home_center_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_home_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_home_center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_home_item_artists">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_home_playlists"
+                    style="@style/HomeItemImageStyle"
+                    app:srcCompat="@drawable/ic_all_playlist" />
+
+                <TextView
+                    android:id="@+id/text_home_playlists_title"
+                    style="@style/HomeItemTitleStyle"
+                    android:background="@color/homePlaylistsTitleBackgroundColor"
+                    android:text="@string/title_playlists"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_home_playlists" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- For 'Jukebox' -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_home_item_jukebox"
+            style="@style/HomeItemCardStyle"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_home_right_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_home_left_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_home_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_home_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_home_item_songs">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_home_jukebox"
+                    style="@style/HomeItemImageStyle"
+                    app:srcCompat="@drawable/ic_all_jukebox" />
+
+                <TextView
+                    android:id="@+id/text_home_jukebox_title"
+                    style="@style/HomeItemTitleStyle"
+                    android:background="@color/homeJukeboxTitleBackgroundColor"
+                    android:text="@string/title_jukebox"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_home_jukebox" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Explanation Text -->
+        <include
+            android:id="@+id/include_home_explanation"
+            layout="@layout/layout_all_explanation"
+            android:layout_width="@dimen/match_constraint_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_all_explanation_vertical_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_home_right_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_home_left_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_home_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_home_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_home_item_jukebox" />
+
+        <!-- Added Space for Bottom Sheet Player -->
+        <android.widget.Space
+            android:id="@+id/space_home_collapsed_player"
+            style="@style/ConstraintCenterHorizontalStyle"
+            android:layout_width="@dimen/match_constraint_0dp"
+            android:layout_height="@dimen/bottom_sheet_player_peek_height"
+            app:layout_constraintTop_toBottomOf="@+id/include_home_explanation" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

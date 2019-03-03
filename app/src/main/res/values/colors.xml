@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ================ -->
+    <!-- APP THEME COLORS -->
+    <!-- ================ -->
+    <color name="colorPrimary">#673ab7</color>
+    <color name="colorPrimaryDark">#512da8</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorStatusBar">#80000000</color>
+
+    <!-- =========================== -->
+    <!-- HOME ACTIVITY DRAWER COLORS -->
+    <!-- =========================== -->
+    <color name="homeDrawerMenuTitleTextColor">#b4d5ff</color>
+    <color name="homeDrawerMenuSelectedItemTextColor">#ff80ab</color>
+    <color name="homeDrawerMenuBackgroundColor">#27233f</color>
+
+    <!-- ============================= -->
+    <!-- HOME ACTIVITY/FRAGMENT COLORS -->
+    <!-- ============================= -->
+    <color name="homeAlbumsTitleBackgroundColor">#FFC107</color>
+    <color name="homeArtistsTitleBackgroundColor">#3f51b5</color>
+    <color name="homeSongsTitleBackgroundColor">#E91E63</color>
+    <color name="homePlaylistsTitleBackgroundColor">#F44336</color>
+    <color name="homeJukeboxTitleBackgroundColor">#FDC200</color>
+    <color name="homeStatusBarColor">#412a3d</color>
+    <color name="homeToolbarContentColor">#51354c</color>
+
+    <!-- ========================== -->
+    <!-- ALBUM LIST FRAGMENT COLORS -->
+    <!-- ========================== -->
+    <color name="albumListStatusBarColor">#263238</color>
+    <color name="albumListToolbarContentColor">#455A64</color>
+    <color name="albumListItemTitleBackgroundColor">#FFC107</color>
+
+    <!-- ============================ -->
+    <!-- ALBUM DETAIL ACTIVITY COLORS -->
+    <!-- ============================ -->
+    <color name="albumDetailStatusBarColor">#263238</color>
+    <color name="albumDetailToolbarContentColor">#455A64</color>
+
+    <!-- ========================= -->
+    <!-- SONG LIST FRAGMENT COLORS -->
+    <!-- ========================= -->
+    <color name="songListStatusBarColor">#c2185b</color>
+    <color name="songListToolbarContentColor">#e91e63</color>
+
+    <!-- =========================== -->
+    <!-- ARTIST LIST FRAGMENT COLORS -->
+    <!-- =========================== -->
+    <color name="artistListStatusBarColor">#303f9f</color>
+    <color name="artistListToolbarContentColor">#3f51b5</color>
+    <color name="artistListItem1InfoBackgroundColor">#ad1457</color>
+    <color name="artistListItem2InfoBackgroundColor">#ee3e54</color>
+    <color name="artistListItem3InfoBackgroundColor">#827717</color>
+    <color name="artistListItem4InfoBackgroundColor">#cee1f4</color>
+    <color name="artistListItem5InfoBackgroundColor">#43A047</color>
+    <color name="artistListItem6InfoBackgroundColor">#ff9800</color>
+
+    <!-- ============================= -->
+    <!-- ARTIST DETAIL ACTIVITY COLORS -->
+    <!-- ============================= -->
+    <color name="artistDetailStatusBarColor">#8a1046</color>
+    <color name="artistDetailToolbarContentColor">#ad1457</color>
+
+    <!-- =============================== -->
+    <!-- PLAY QUEUE LIST FRAGMENT COLORS -->
+    <!-- =============================== -->
+    <color name="playQueueListStatusBarColor">#d32f2f</color>
+    <color name="playQueueListToolbarContentColor">#F44336</color>
+    <color name="playQueueListItemTitleBackgroundColor">#B0BEC5</color>
+
+    <!-- ================================= -->
+    <!-- PLAY QUEUE DETAIL ACTIVITY COLORS -->
+    <!-- ================================= -->
+    <color name="playQueueDetailStatusBarColor">#d32f2f</color>
+    <color name="playQueueDetailToolbarContentColor">#F44336</color>
+
+    <!-- ============================ -->
+    <!-- JUKEBOX LIST ACTIVITY COLORS -->
+    <!-- ============================ -->
+    <color name="jukeboxListStatusBarColor">#c2185b</color>
+    <color name="jukeboxListToolbarContentColor">#EE0D61</color>
+    <color name="jukeboxListItem1TitleBackgroundColor">#F44336</color>
+    <color name="jukeboxListItem2TitleBackgroundColor">#FFA000</color>
+    <color name="jukeboxListItem3TitleBackgroundColor">#FFA726</color>
+    <color name="jukeboxListItem4TitleBackgroundColor">#F44336</color>
+    <color name="jukeboxListItem5TitleBackgroundColor">#5D4037</color>
+    <color name="jukeboxListItem6TitleBackgroundColor">#455A64</color>
+
+    <!-- ============================== -->
+    <!-- JUKEBOX DETAIL ACTIVITY COLORS -->
+    <!-- ============================== -->
+    <color name="jukeboxDetailStatusBarColor">#c2185b</color>
+    <color name="jukeboxDetailToolbarContentColor">#EE0D61</color>
+
+    <!-- ================================================= -->
+    <!-- JUKEBOX DETAIL PAYMENT BOTTOM SHEET DIALOG COLORS -->
+    <!-- ================================================= -->
+    <color name="jukeboxDetailPaymentButtonColor">#ff3d00</color>
+    <color name="jukeboxDetailPaymentHeaderInfoDividerColor">#757575</color>
+
+    <!-- ========================== -->
+    <!-- BOTTOM SHEET PLAYER COLORS -->
+    <!-- ========================== -->
+    <color name="playerTrackControlButtonsColor">#80d8ff</color>
+    <color name="playerElapsedTimeTextColor">#ffe57f</color>
+
+    <!-- ===================== -->
+    <!-- ABOUT ACTIVITY COLORS -->
+    <!-- ===================== -->
+    <color name="aboutContentTextColor">#2b0000</color>
+    <color name="aboutInfoCardBackgroundColor">#ffe082</color>
+    <color name="aboutContentLinkTextColor">#0000b5</color>
+
+</resources>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_jukebox_detail_background"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_1_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_1_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_1_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_1_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_1_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_1_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_1_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_1_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_1_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_1_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_1_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_1_album_cover"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_1_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_1_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_1_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_1_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_1_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_1_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_1_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_1_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_1_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_1_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_2_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_2_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_2_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_2_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_2_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_2_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_2_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_2_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_2_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_2_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_2_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_2_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_1_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_2_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_2_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_2_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_2_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_2_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_2_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_2_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_2_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_2_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_2_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_3_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_3_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_3_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_3_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_3_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_3_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_3_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_3_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_3_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_3_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_3_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_3_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_2_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_3_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_3_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_3_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_3_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_3_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_3_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_3_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_3_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_3_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_3_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_4_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_4_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_4_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_4_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_4_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_4_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_4_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_4_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_4_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_4_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_4_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_4_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_3_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_4_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_4_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_4_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_4_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_4_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_4_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_4_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_4_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_4_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_4_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_5_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_5_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_5_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_5_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_5_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_5_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_5_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_5_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_5_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_5_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_5_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_5_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_4_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_5_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_5_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_5_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_5_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_5_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_5_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_5_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_5_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_5_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_5_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_6_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_6_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_6_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_6_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_6_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_6_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_6_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_6_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_6_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_6_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_6_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_6_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_5_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_6_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_6_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_6_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_6_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_6_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_6_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_6_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_6_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_6_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_6_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_7_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_7_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_7_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_7_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_7_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_7_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_7_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_7_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_7_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_7_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_7_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_7_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_6_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_7_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_7_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_7_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_7_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_7_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_7_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_7_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_7_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_7_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_7_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_8_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_8_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_8_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_8_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_8_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_8_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_8_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_8_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_8_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_8_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_8_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_8_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_7_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_8_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_8_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_8_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_8_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_8_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_8_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_8_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_8_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_8_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_8_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_9_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_9_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_9_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_9_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_9_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_9_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_9_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_9_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_9_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_9_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_9_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_9_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_8_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_9_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_9_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_9_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_9_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_9_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_9_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_9_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_9_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_9_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_9_title" />
+
+        <View
+            android:id="@+id/view_jukebox_detail_track_10_clickable"
+            style="@style/JukeboxDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_10_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_10_title" />
+
+        <ImageView
+            android:id="@+id/image_jukebox_detail_track_10_album_cover"
+            style="@style/JukeboxDetailTrackCoverStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/text_jukebox_detail_track_10_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_10_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_10_title"
+            style="@style/JukeboxDetailTrackTitleStyle"
+            android:text="@string/jukebox_song_10_track_title"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_10_length"
+            app:layout_constraintLeft_toRightOf="@+id/image_jukebox_detail_track_10_album_cover"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_10_length"
+            app:layout_constraintStart_toEndOf="@+id/image_jukebox_detail_track_10_album_cover"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_9_clickable" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_10_artists"
+            style="@style/JukeboxDetailTrackArtistsStyle"
+            android:text="@string/jukebox_song_10_track_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_jukebox_detail_track_10_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_jukebox_detail_track_10_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_jukebox_detail_track_10_length"
+            app:layout_constraintStart_toStartOf="@+id/text_jukebox_detail_track_10_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_jukebox_detail_track_10_title" />
+
+        <TextView
+            android:id="@+id/text_jukebox_detail_track_10_length"
+            style="@style/JukeboxDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_jukebox_detail_track_10_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_jukebox_detail_track_10_title" />
+
+        <!-- Explanation Text -->
+        <include
+            android:id="@+id/include_jukebox_detail_explanation"
+            style="@style/ConstraintCenterHorizontalStyle"
+            layout="@layout/layout_all_explanation"
+            android:layout_width="@dimen/match_constraint_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_all_explanation_vertical_margin"
+            app:layout_constraintTop_toBottomOf="@+id/view_jukebox_detail_track_10_clickable" />
+
+        <!-- Added Space for Bottom Sheet Player -->
+        <android.widget.Space
+            android:id="@+id/space_jukebox_detail_collapsed_player"
+            style="@style/ConstraintCenterHorizontalStyle"
+            android:layout_width="@dimen/match_constraint_0dp"
+            android:layout_height="@dimen/bottom_sheet_player_peek_height"
+            app:layout_constraintTop_toBottomOf="@+id/include_jukebox_detail_explanation" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

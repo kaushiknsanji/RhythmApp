@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Contains static information used by PlayQueueListFragment and PlayQueueDetailActivity -->
+
+    <!-- List of Playlists -->
+    <string name="playlist_1_unsaved">Unsaved</string>
+    <string name="playlist_2_favorites">My Favorites</string>
+    <string name="playlist_3_newly_added">Newly Added</string>
+    <string name="playlist_4_freq_played">Frequently Played</string>
+
+    <!-- Fixed Song Count for each Playlist -->
+    <string name="playlist_total_song_count">10 Songs</string>
+</resources>

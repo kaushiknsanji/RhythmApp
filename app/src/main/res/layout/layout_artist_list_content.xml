@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_artist_list_background"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/content_artist_list_vertical_padding"
+        android:paddingTop="@dimen/content_artist_list_vertical_padding">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_artist_list_left_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/guideline_artist_list_horizontal_keyline" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_artist_list_right_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/guideline_artist_list_horizontal_keyline" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_artist_list_center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <!-- Artist - 1 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_artist_list_item_1"
+            style="@style/ArtistListItemCardStyle"
+            android:layout_marginEnd="@dimen/card_artist_list_item_horizontal_margin"
+            android:layout_marginRight="@dimen/card_artist_list_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_artist_list_left_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_artist_list_left_vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_artist_1"
+                    style="@style/ArtistListItemImageStyle"
+                    app:srcCompat="@drawable/ic_artist_1_beyonce" />
+
+                <View
+                    android:id="@+id/view_artist_1_background"
+                    style="@style/ArtistListItemInfoBackgroundStyle"
+                    android:background="@color/artistListItem1InfoBackgroundColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_artist_1_album_count"
+                    app:layout_constraintTop_toTopOf="@+id/text_artist_1_name" />
+
+                <TextView
+                    android:id="@+id/text_artist_1_name"
+                    style="@style/ArtistListItemNameStyle.TextMediumInverse"
+                    android:text="@string/artist_beyonce"
+                    app:layout_constraintTop_toBottomOf="@+id/image_artist_1" />
+
+                <TextView
+                    android:id="@+id/text_artist_1_album_count"
+                    style="@style/ArtistListItemAlbumCountStyle.TextSmallInverse"
+                    android:text="@string/artist_album_count"
+                    app:layout_constraintTop_toBottomOf="@+id/text_artist_1_name" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Artist - 2 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_artist_list_item_2"
+            style="@style/ArtistListItemCardStyle"
+            android:layout_marginEnd="@dimen/card_artist_list_item_horizontal_margin"
+            android:layout_marginRight="@dimen/card_artist_list_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_artist_list_right_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_artist_list_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_artist_2"
+                    style="@style/ArtistListItemImageStyle"
+                    app:srcCompat="@drawable/ic_artist_2_elvis_presley" />
+
+                <View
+                    android:id="@+id/view_artist_2_background"
+                    style="@style/ArtistListItemInfoBackgroundStyle"
+                    android:background="@color/artistListItem2InfoBackgroundColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_artist_2_album_count"
+                    app:layout_constraintTop_toTopOf="@+id/text_artist_2_name" />
+
+                <TextView
+                    android:id="@+id/text_artist_2_name"
+                    style="@style/ArtistListItemNameStyle.TextMediumInverse"
+                    android:text="@string/artist_elvis_presley"
+                    app:layout_constraintTop_toBottomOf="@+id/image_artist_2" />
+
+                <TextView
+                    android:id="@+id/text_artist_2_album_count"
+                    style="@style/ArtistListItemAlbumCountStyle.TextSmallInverse"
+                    android:text="@string/artist_album_count"
+                    app:layout_constraintTop_toBottomOf="@+id/text_artist_2_name" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Artist - 3 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_artist_list_item_3"
+            style="@style/ArtistListItemCardStyle"
+            android:layout_marginEnd="@dimen/card_artist_list_item_horizontal_margin"
+            android:layout_marginRight="@dimen/card_artist_list_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_artist_list_left_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_artist_list_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_artist_list_item_1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_artist_3"
+                    style="@style/ArtistListItemImageStyle"
+                    app:srcCompat="@drawable/ic_artist_3_jessie_j" />
+
+                <View
+                    android:id="@+id/view_artist_3_background"
+                    style="@style/ArtistListItemInfoBackgroundStyle"
+                    android:background="@color/artistListItem3InfoBackgroundColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_artist_3_album_count"
+                    app:layout_constraintTop_toTopOf="@+id/text_artist_3_name" />
+
+                <TextView
+                    android:id="@+id/text_artist_3_name"
+                    style="@style/ArtistListItemNameStyle.TextMediumInverse"
+                    android:text="@string/artist_jessie_j"
+                    app:layout_constraintTop_toBottomOf="@+id/image_artist_3" />
+
+                <TextView
+                    android:id="@+id/text_artist_3_album_count"
+                    style="@style/ArtistListItemAlbumCountStyle.TextSmallInverse"
+                    android:text="@string/artist_album_count"
+                    app:layout_constraintTop_toBottomOf="@+id/text_artist_3_name" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Artist - 4 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_artist_list_item_4"
+            style="@style/ArtistListItemCardStyle"
+            android:layout_marginEnd="@dimen/card_artist_list_item_horizontal_margin"
+            android:layout_marginRight="@dimen/card_artist_list_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_artist_list_right_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_artist_list_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_artist_list_item_2">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_artist_4"
+                    style="@style/ArtistListItemImageStyle"
+                    app:srcCompat="@drawable/ic_artist_4_john_lennon" />
+
+                <View
+                    android:id="@+id/view_artist_4_background"
+                    style="@style/ArtistListItemInfoBackgroundStyle"
+                    android:background="@color/artistListItem4InfoBackgroundColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_artist_4_album_count"
+                    app:layout_constraintTop_toTopOf="@+id/text_artist_4_name" />
+
+                <TextView
+                    android:id="@+id/text_artist_4_name"
+                    style="@style/ArtistListItemNameStyle.TextMedium"
+                    android:text="@string/artist_john_lennon"
+                    app:layout_constraintTop_toBottomOf="@+id/image_artist_4" />
+
+                <TextView
+                    android:id="@+id/text_artist_4_album_count"
+                    style="@style/ArtistListItemAlbumCountStyle.TextSmall"
+                    android:text="@string/artist_album_count"
+                    app:layout_constraintTop_toBottomOf="@+id/text_artist_4_name" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Artist - 5 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_artist_list_item_5"
+            style="@style/ArtistListItemCardStyle"
+            android:layout_marginEnd="@dimen/card_artist_list_item_horizontal_margin"
+            android:layout_marginRight="@dimen/card_artist_list_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_artist_list_left_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_artist_list_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_artist_list_item_3">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_artist_5"
+                    style="@style/ArtistListItemImageStyle"
+                    app:srcCompat="@drawable/ic_artist_5_rihanna" />
+
+                <View
+                    android:id="@+id/view_artist_5_background"
+                    style="@style/ArtistListItemInfoBackgroundStyle"
+                    android:background="@color/artistListItem5InfoBackgroundColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_artist_5_album_count"
+                    app:layout_constraintTop_toTopOf="@+id/text_artist_5_name" />
+
+                <TextView
+                    android:id="@+id/text_artist_5_name"
+                    style="@style/ArtistListItemNameStyle.TextMediumInverse"
+                    android:text="@string/artist_rihanna"
+                    app:layout_constraintTop_toBottomOf="@+id/image_artist_5" />
+
+                <TextView
+                    android:id="@+id/text_artist_5_album_count"
+                    style="@style/ArtistListItemAlbumCountStyle.TextSmallInverse"
+                    android:text="@string/artist_album_count"
+                    app:layout_constraintTop_toBottomOf="@+id/text_artist_5_name" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Artist - 6 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_artist_list_item_6"
+            style="@style/ArtistListItemCardStyle"
+            android:layout_marginEnd="@dimen/card_artist_list_item_horizontal_margin"
+            android:layout_marginRight="@dimen/card_artist_list_item_horizontal_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_artist_list_right_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_artist_list_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_artist_list_center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_artist_list_item_4">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/image_artist_6"
+                    style="@style/ArtistListItemImageStyle"
+                    app:srcCompat="@drawable/ic_artist_6_selena_gomez" />
+
+                <View
+                    android:id="@+id/view_artist_6_background"
+                    style="@style/ArtistListItemInfoBackgroundStyle"
+                    android:background="@color/artistListItem6InfoBackgroundColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_artist_6_album_count"
+                    app:layout_constraintTop_toTopOf="@+id/text_artist_6_name" />
+
+                <TextView
+                    android:id="@+id/text_artist_6_name"
+                    style="@style/ArtistListItemNameStyle.TextMedium"
+                    android:text="@string/artist_selena_gomez"
+                    app:layout_constraintTop_toBottomOf="@+id/image_artist_6" />
+
+                <TextView
+                    android:id="@+id/text_artist_6_album_count"
+                    style="@style/ArtistListItemAlbumCountStyle.TextSmall"
+                    android:text="@string/artist_album_count"
+                    app:layout_constraintTop_toBottomOf="@+id/text_artist_6_name" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Explanation Text -->
+        <include
+            android:id="@+id/include_artist_list_explanation"
+            layout="@layout/layout_all_explanation"
+            android:layout_width="@dimen/match_constraint_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_all_explanation_vertical_margin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_artist_list_right_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_artist_list_left_vertical"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_artist_list_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/guideline_artist_list_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/card_artist_list_item_6" />
+
+        <!-- Added Space for Bottom Sheet Player -->
+        <android.widget.Space
+            android:id="@+id/space_artist_list_collapsed_player"
+            style="@style/ConstraintCenterHorizontalStyle"
+            android:layout_width="@dimen/match_constraint_0dp"
+            android:layout_height="@dimen/bottom_sheet_player_peek_height"
+            app:layout_constraintTop_toBottomOf="@+id/include_artist_list_explanation" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

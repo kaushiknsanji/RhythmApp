@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================== -->
+    <!-- FOR THE HOME ACTIVITY/FRAGMENT -->
+    <!-- ============================== -->
+    <dimen name="guideline_home_horizontal_keyline">32dp</dimen>
+
+    <!-- =========================== -->
+    <!-- FOR THE ALBUM LIST FRAGMENT -->
+    <!-- =========================== -->
+    <dimen name="guideline_album_list_horizontal_keyline">32dp</dimen>
+
+    <!-- ============================ -->
+    <!-- FOR THE ARTIST LIST FRAGMENT -->
+    <!-- ============================ -->
+    <dimen name="guideline_artist_list_horizontal_keyline">32dp</dimen>
+
+    <!-- ================================ -->
+    <!-- FOR THE PLAY QUEUE LIST FRAGMENT -->
+    <!-- ================================ -->
+    <dimen name="guideline_play_queue_list_horizontal_keyline">32dp</dimen>
+
+    <!-- ============================= -->
+    <!-- FOR THE JUKEBOX LIST ACTIVITY -->
+    <!-- ============================= -->
+    <dimen name="guideline_jukebox_list_horizontal_keyline">32dp</dimen>
+
+    <!-- ====================== -->
+    <!-- FOR THE ABOUT ACTIVITY -->
+    <!-- ====================== -->
+    <dimen name="scrollview_about_content_padding">32dp</dimen>
+
+</resources>

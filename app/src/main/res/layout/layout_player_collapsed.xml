@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_player_collapsed"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_sheet_player_peek_height"
+    tools:background="@drawable/shape_all_player_background">
+
+    <SeekBar
+        android:id="@+id/seek_player_collapsed"
+        style="@style/PlayerCollapsedSeekBarStyle"
+        android:layout_height="@dimen/seek_player_collapsed_height"
+        android:focusable="false"
+        android:paddingEnd="@dimen/seek_player_collapsed_no_padding"
+        android:paddingLeft="@dimen/seek_player_collapsed_no_padding"
+        android:paddingRight="@dimen/seek_player_collapsed_no_padding"
+        android:paddingStart="@dimen/seek_player_collapsed_no_padding"
+        android:thumb="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="100" />
+
+    <ImageView
+        android:id="@+id/image_player_collapsed_cover"
+        android:layout_width="@dimen/image_player_collapsed_cover_size"
+        android:layout_height="@dimen/image_player_collapsed_cover_size"
+        android:layout_marginLeft="@dimen/player_collapsed_horizontal_margin"
+        android:layout_marginStart="@dimen/player_collapsed_horizontal_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seek_player_collapsed"
+        app:srcCompat="@drawable/ic_all_album" />
+
+    <TextView
+        android:id="@+id/text_player_collapsed_song_artist"
+        style="@style/ConstrainedTextStyle.Marquee.LeftAlign"
+        android:layout_marginLeft="@dimen/text_player_collapsed_song_artist_margin_left"
+        android:layout_marginStart="@dimen/text_player_collapsed_song_artist_margin_left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/image_player_collapsed_cover"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_player_collapsed_play_pause"
+        app:layout_constraintLeft_toRightOf="@+id/image_player_collapsed_cover"
+        app:layout_constraintRight_toLeftOf="@+id/imgbtn_player_collapsed_play_pause"
+        app:layout_constraintStart_toEndOf="@+id/image_player_collapsed_cover"
+        app:layout_constraintTop_toTopOf="@+id/image_player_collapsed_cover"
+        tools:text="7 rings - Ariana Grande" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_player_collapsed_skip_next"
+        style="@style/PlayerCollapsedImageButtonsStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/image_player_collapsed_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_player_collapsed_cover"
+        app:srcCompat="@drawable/ic_player_skip_next" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_player_collapsed_play_pause"
+        style="@style/PlayerCollapsedImageButtonsStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/image_player_collapsed_cover"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_player_collapsed_skip_next"
+        app:layout_constraintRight_toLeftOf="@+id/imgbtn_player_collapsed_skip_next"
+        app:layout_constraintTop_toTopOf="@+id/image_player_collapsed_cover"
+        app:srcCompat="@drawable/ic_all_play_white_animatable" />
+
+</android.support.constraint.ConstraintLayout>

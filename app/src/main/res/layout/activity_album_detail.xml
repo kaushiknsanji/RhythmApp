@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.kaushiknsanji.rhythm.ui.album.AlbumDetailActivity">
+
+    <!-- Custom Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_behavior="com.example.kaushiknsanji.rhythm.extensions.BottomSheetAwareAppBarBehavior">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_album_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_all_hero_size"
+            android:minHeight="?attr/actionBarSize"
+            app:contentScrim="@color/albumDetailToolbarContentColor"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@color/albumDetailStatusBarColor"
+            app:titleEnabled="true">
+
+            <ImageView
+                style="@style/AllHeroImageStyle"
+                android:fitsSystemWindows="true"
+                app:srcCompat="@drawable/ic_all_album" />
+
+            <ImageView style="@style/AllHeroImageScrimTopStyle" />
+
+            <ImageView style="@style/AllHeroImageScrimBottomStyle" />
+
+            <include
+                android:id="@+id/include_toolbar_album_detail"
+                layout="@layout/layout_all_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <!-- Toolbar Top Banner -->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cl_album_detail_info_padding">
+
+            <TextView
+                android:id="@+id/text_album_detail_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/album_1_artist" />
+
+            <TextView
+                android:id="@+id/text_album_detail_year"
+                style="@style/BaseSmallTextStyle"
+                android:layout_marginTop="@dimen/text_album_detail_year_margin_top"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_album_detail_artist"
+                tools:text="@string/album_1_year" />
+
+            <TextView
+                android:id="@+id/text_album_detail_year_genre_separator"
+                style="@style/AllBulletMarkTextStyle.Small"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_album_detail_year"
+                app:layout_constraintLeft_toRightOf="@+id/text_album_detail_year"
+                app:layout_constraintStart_toEndOf="@+id/text_album_detail_year" />
+
+            <TextView
+                android:id="@+id/text_album_detail_genre"
+                style="@style/BaseSmallTextStyle"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_album_detail_year_genre_separator"
+                app:layout_constraintLeft_toRightOf="@+id/text_album_detail_year_genre_separator"
+                app:layout_constraintStart_toEndOf="@+id/text_album_detail_year_genre_separator"
+                tools:text="@string/album_1_genre" />
+
+            <TextView
+                android:id="@+id/text_album_detail_genre_songs_separator"
+                style="@style/AllBulletMarkTextStyle.Small"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_album_detail_genre"
+                app:layout_constraintLeft_toRightOf="@+id/text_album_detail_genre"
+                app:layout_constraintStart_toEndOf="@+id/text_album_detail_genre" />
+
+            <TextView
+                android:id="@+id/text_album_detail_songs_count"
+                style="@style/BaseSmallTextStyle"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_album_detail_genre_songs_separator"
+                app:layout_constraintLeft_toRightOf="@+id/text_album_detail_genre_songs_separator"
+                app:layout_constraintStart_toEndOf="@+id/text_album_detail_genre_songs_separator"
+                tools:text="@string/album_1_song_count" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Anchored FAB Play -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_album_detail_play"
+        style="@style/AllToolbarAnchoredFabPlayStyle"
+        app:layout_anchor="@+id/collapsing_toolbar_album_detail" />
+
+    <!-- Content of the Activity -->
+    <include layout="@layout/layout_album_detail_content" />
+
+    <!-- Player Bottom Sheet -->
+    <include layout="@layout/layout_all_player" />
+
+</android.support.design.widget.CoordinatorLayout>

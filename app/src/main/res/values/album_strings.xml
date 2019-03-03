@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Contains static information used by AlbumListFragment and AlbumDetailActivity -->
+
+    <!-- Album-1 Data -->
+    <string name="album_1_title">&#247; (Divide)</string>
+    <string name="album_1_artist">Ed Sheeran</string>
+    <string name="album_1_year">2017</string>
+    <string name="album_1_genre">Pop</string>
+    <string name="album_1_song_count">16 Songs</string>
+
+    <!-- Album-2 Data -->
+    <string name="album_2_title">Purpose</string>
+    <string name="album_2_artist">Justin Bieber</string>
+    <string name="album_2_year">2015</string>
+    <string name="album_2_genre">Dance-pop</string>
+    <string name="album_2_song_count">18 Songs</string>
+
+    <!-- Album-3 Data -->
+    <string name="album_3_title">Evolve</string>
+    <string name="album_3_artist">Imagine Dragons</string>
+    <string name="album_3_year">2017</string>
+    <string name="album_3_genre">Pop rock</string>
+    <string name="album_3_song_count">12 Songs</string>
+
+    <!-- Album-4 Data -->
+    <string name="album_4_title">Nine Track Mind</string>
+    <string name="album_4_artist">Charlie Puth</string>
+    <string name="album_4_year">2016</string>
+    <string name="album_4_genre">Pop, R&amp;B</string>
+    <string name="album_4_song_count">16 Songs</string>
+
+    <!-- Album-5 Data -->
+    <string name="album_5_title">Haiz</string>
+    <string name="album_5_artist">Hailee Steinfeld</string>
+    <string name="album_5_year">2015</string>
+    <string name="album_5_genre">Dance-pop</string>
+    <string name="album_5_song_count">4 Songs</string>
+
+    <!-- Album-6 Data -->
+    <string name="album_6_title">Road Between</string>
+    <string name="album_6_artist">Lucy Hale</string>
+    <string name="album_6_year">2014</string>
+    <string name="album_6_genre">Country</string>
+    <string name="album_6_song_count">11 Songs</string>
+
+    <!-- Album-1 Songs Track Numbers -->
+    <string name="album_1_song_1_track_no">1.</string>
+    <string name="album_1_song_2_track_no">2.</string>
+    <string name="album_1_song_3_track_no">3.</string>
+    <string name="album_1_song_4_track_no">4.</string>
+    <string name="album_1_song_5_track_no">5.</string>
+    <string name="album_1_song_6_track_no">6.</string>
+    <string name="album_1_song_7_track_no">7.</string>
+    <string name="album_1_song_8_track_no">8.</string>
+    <string name="album_1_song_9_track_no">9.</string>
+    <string name="album_1_song_10_track_no">10.</string>
+    <string name="album_1_song_11_track_no">11.</string>
+    <string name="album_1_song_12_track_no">12.</string>
+    <string name="album_1_song_13_track_no">13.</string>
+    <string name="album_1_song_14_track_no">14.</string>
+    <string name="album_1_song_15_track_no">15.</string>
+    <string name="album_1_song_16_track_no">16.</string>
+
+    <!-- Album-1 Songs Data displayed for all Albums -->
+    <string name="album_1_song_1">Eraser</string>
+    <string name="album_1_song_1_artists">Ed Sheeran, Johnny McDaid</string>
+    <string name="album_1_song_2">Castle on the Hill</string>
+    <string name="album_1_song_2_artists">Ed Sheeran</string>
+    <string name="album_1_song_3">Dive</string>
+    <string name="album_1_song_3_artists">Ed Sheeran, Julia Michaels</string>
+    <string name="album_1_song_4">Shape of You</string>
+    <string name="album_1_song_4_artists">Ed Sheeran, Johnny McDaid, Kevin Briggs, Kandi Burruss, Tameka Cottle</string>
+    <string name="album_1_song_5">Perfect</string>
+    <string name="album_1_song_5_artists">Ed Sheeran</string>
+    <string name="album_1_song_6">Galway Girl</string>
+    <string name="album_1_song_6_artists">Ed Sheeran, Foy Vance, Johnny McDaid, Amy Wadge</string>
+    <string name="album_1_song_7">Happier</string>
+    <string name="album_1_song_7_artists">Ed Sheeran, Ryan Tedder</string>
+    <string name="album_1_song_8">New Man</string>
+    <string name="album_1_song_8_artists">Ed Sheeran, Ammar Malik</string>
+    <string name="album_1_song_9">Hearts Don\'t Break Around Here</string>
+    <string name="album_1_song_9_artists">Ed Sheeran, Johnny McDaid</string>
+    <string name="album_1_song_10">What Do I Know?</string>
+    <string name="album_1_song_10_artists">Ed Sheeran, Foy Vance</string>
+    <string name="album_1_song_11">How Would You Feel</string>
+    <string name="album_1_song_11_artists">Ed Sheeran</string>
+    <string name="album_1_song_12">Supermarket Flowers</string>
+    <string name="album_1_song_12_artists">Ed Sheeran</string>
+    <string name="album_1_song_13">Barcelona</string>
+    <string name="album_1_song_13_artists">Ed Sheeran, Amy Wadge, Foy Vance, Johnny McDaid</string>
+    <string name="album_1_song_14">Bibia Be Ye Ye</string>
+    <string name="album_1_song_14_artists">Ed Sheeran</string>
+    <string name="album_1_song_15">Nancy Mulligan</string>
+    <string name="album_1_song_15_artists">Ed Sheeran, Amy Wadge, Foy Vance, Johnny McDaid</string>
+    <string name="album_1_song_16">Save Myself</string>
+    <string name="album_1_song_16_artists">Ed Sheeran, Amy Wadge</string>
+
+</resources>

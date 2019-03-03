@@ -1,0 +1,225 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the App -->
+    <string name="app_name">Rhythm</string>
+
+    <!-- Accessibility strings for the Action Bar Drawer Toggle -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Common Bullet Mark Text -->
+    <string name="all_bullet_mark" translatable="false">\t \u2022 \t</string>
+
+    <!-- Common Action labels -->
+    <string name="action_search">Search</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_add_to_playlist">Add to Playlist</string>
+    <string name="action_delete_from_storage">Delete from Storage</string>
+    <string name="action_playlist_save">Save Playlist</string>
+    <string name="action_playlist_add_more">Add More</string>
+    <string name="action_playlist_delete">Delete Playlist</string>
+    <string name="action_player_artist">Artist</string>
+    <string name="action_player_album">Album</string>
+    <string name="action_player_song_info">Song Info</string>
+
+    <!-- Common Activity/Fragment labels appearing in the App Drawer -->
+    <string name="title_home">Home</string>
+    <string name="title_albums">Albums</string>
+    <string name="title_artists">Artists</string>
+    <string name="title_songs">Songs</string>
+    <string name="title_playlists">Playlists</string>
+    <string name="title_drawer_menu_services">Services</string>
+    <string name="title_jukebox">Jukebox</string>
+    <string name="title_drawer_menu_settings">Settings</string>
+    <string name="title_app_settings">App Settings</string>
+    <string name="title_eq_settings">EQ Settings</string>
+    <string name="title_drawer_menu_information">Information</string>
+    <string name="title_about">About</string>
+
+    <!-- Common Song Duration Text -->
+    <string name="all_song_duration">03:45</string>
+
+    <!-- Bundle Keys used to save/restore the last played track information and status -->
+    <string name="bundle_last_played_track_str_key" translatable="false">str-last-played-track</string>
+    <string name="bundle_last_played_progress_int_key" translatable="false">int-last-played-progress</string>
+    <string name="bundle_last_playing_state_bool_key" translatable="false">bool-last-playing-state</string>
+
+    <!-- ====================================== -->
+    <!-- STRINGS USED IN HOME ACTIVITY/FRAGMENT -->
+    <!-- ====================================== -->
+    <string name="home_explanation">
+        Home page displays the root navigation to the screens mentioned.
+        One can also navigate using the provided Navigation Drawer (Swipe from left-edge).
+    </string>
+    <string name="home_message_app_settings_menu">Launches App Settings Activity</string>
+    <string name="home_message_eq_settings_menu">Launches Equalizer Settings of the App</string>
+
+    <!-- =================================== -->
+    <!-- STRINGS USED IN ALBUM LIST FRAGMENT -->
+    <!-- =================================== -->
+    <string name="album_list_explanation">
+        Albums page displays a list of Albums available,
+        with their Title and Album Cover.
+    </string>
+    <string name="album_list_message_search_menu">Launches SearchView to enable user to Search for an Album</string>
+
+    <!-- ===================================== -->
+    <!-- STRINGS USED IN ALBUM DETAIL ACTIVITY -->
+    <!-- ===================================== -->
+    <string name="album_detail_explanation">
+        Album Detail page displays the Album information and its Songs.
+        User can click on any Song to play and also queue them for listening.
+    </string>
+    <string name="album_detail_message_fab_play_button">Starts a New Play Queue with all the list of Songs shown</string>
+    <string name="album_detail_track_item_message_playlist_queue_button">Adds the selected song to the current Play Queue</string>
+    <string name="album_detail_track_item_message_more_action_button">Shows a Popup Menu for More Actions like Share, Add to Playlist, Delete Track, etc.</string>
+    <string name="album_detail_message_favorite_menu_album_add">Album added to \"My Favorites\" playlist</string>
+    <string name="album_detail_message_favorite_menu_album_remove">Album removed from \"My Favorites\" playlist</string>
+    <string name="album_detail_message_add_to_playlist_menu">User is presented with a choice of Playlists to enqueue this Album into…</string>
+    <string name="album_detail_message_delete_from_storage_menu">Deletes this Album from storage</string>
+
+    <!-- ================================== -->
+    <!-- STRINGS USED IN SONG LIST FRAGMENT -->
+    <!-- ================================== -->
+    <string name="song_list_explanation">
+        Songs page displays a list of Songs available,
+        with their Album Cover, Title and Artist Names. User can click on any Song to play
+        and also queue them for listening.
+    </string>
+    <string name="song_list_message_fab_play_button">Starts a New Play Queue with all the list of Songs shown</string>
+    <string name="song_list_track_item_message_playlist_queue_button">Adds the selected song to the current Play Queue</string>
+    <string name="song_list_track_item_message_more_action_button">Shows a Popup Menu for More Actions like Share, Add to Playlist, Delete Track, etc.</string>
+    <string name="song_list_message_search_menu">Launches SearchView to enable user to Search for a Song</string>
+
+    <!-- ==================================== -->
+    <!-- STRINGS USED IN ARTIST LIST FRAGMENT -->
+    <!-- ==================================== -->
+    <string name="artist_list_explanation">
+        Artists page display a list of Artists available, with their Number of Albums.
+        Clicking on any will show the Albums and Songs of the Artist.
+    </string>
+    <string name="artist_list_message_search_menu">Launches SearchView to enable user to Search for an Artist</string>
+
+    <!-- ====================================== -->
+    <!-- STRINGS USED IN ARTIST DETAIL ACTIVITY -->
+    <!-- ====================================== -->
+    <string name="artist_detail_explanation">
+        Artist Detail page displays the list of Albums of the Artist available along with the
+        Songs of the Artist in each Album. User can click on any Song to play and also queue the
+        Albums for listening.
+    </string>
+    <string name="artist_detail_message_fab_play_button">Starts a New Play Queue with all the list of Songs shown</string>
+    <string name="artist_detail_album_item_message_playlist_queue_button">Adds the songs of this Album to the current Play Queue</string>
+    <string name="artist_detail_album_item_message_more_action_button">Shows a Popup Menu for More Actions like Share, Add to Playlist, Delete Album, etc.</string>
+    <string name="artist_detail_message_favorite_menu_artist_add">Artist\'s Songs are added to \"My Favorites\" playlist</string>
+    <string name="artist_detail_message_favorite_menu_artist_remove">Artist\'s Songs are removed from \"My Favorites\" playlist</string>
+    <string name="artist_detail_message_add_to_playlist_menu">User is presented with a choice of Playlists to enqueue the Songs of this Artist into…</string>
+    <string name="artist_detail_message_delete_from_storage_menu">Deletes this Artist\'s Albums and Songs from storage</string>
+
+    <!-- ======================================== -->
+    <!-- STRINGS USED IN PLAY QUEUE LIST FRAGMENT -->
+    <!-- ======================================== -->
+    <string name="play_queue_list_explanation">
+        Playlists page displays a list of User Playlist and Smart Playlist available.
+        Clicking on any will show the Songs queued in the corresponding Playlist.
+    </string>
+    <string name="play_queue_list_message_search_menu">Launches SearchView to enable user to Search for a Playlist</string>
+
+    <!-- ========================================== -->
+    <!-- STRINGS USED IN PLAY QUEUE DETAIL ACTIVITY -->
+    <!-- ========================================== -->
+    <string name="play_queue_detail_explanation">
+        Playlist detail page displays a list of Songs queued in the Playlist. User can click
+        on any Song to play and also reorder them in the play queue.
+    </string>
+    <string name="play_queue_detail_message_fab_play_button">Starts to Play all the list of Songs queued in the Playlist</string>
+    <string name="play_queue_detail_track_item_message_drag_handle_button">Allows to reorder the Track items in the Playlist queue</string>
+    <string name="play_queue_detail_message_existing_playlist_save_menu">Saves the changes done to the existing Playlist</string>
+    <string name="play_queue_detail_message_unsaved_playlist_save_menu">Saves the current temporary Play Queue list with the given Name</string>
+    <string name="play_queue_detail_message_playlist_add_more_menu">Launches an Activity to Search and Pick Songs into the Playlist</string>
+    <string name="play_queue_detail_message_playlist_delete_menu">Deletes the Playlist</string>
+
+    <!-- ===================================== -->
+    <!-- STRINGS USED IN JUKEBOX LIST ACTIVITY -->
+    <!-- ===================================== -->
+    <string name="jukebox_list_explanation">
+        Jukebox page displays a list of available Jukeboxes which are online radio channels.
+        Clicking on any will show the Songs available in the corresponding Jukebox.
+    </string>
+    <string name="jukebox_list_message_search_menu">Launches SearchView to enable user to Search for a Jukebox</string>
+
+    <!-- ======================================= -->
+    <!-- STRINGS USED IN JUKEBOX DETAIL ACTIVITY -->
+    <!-- ======================================= -->
+    <string name="jukebox_detail_explanation">
+        Jukebox Detail page displays the Jukebox information and its Songs.
+        User can click on any Song to play and listen.
+    </string>
+
+    <!-- ========================================================== -->
+    <!-- STRINGS USED IN JUKEBOX DETAIL PAYMENT BOTTOM SHEET DIALOG -->
+    <!-- ========================================================== -->
+    <string name="jukebox_detail_payment_explanation">
+        This is a bottom sheet dialog that displays the payment information for listening to the Jukebox.
+        User is required to pay the amount requested to listen to this Jukebox channel.
+        \n\nPayment is carried out via the in-app billing service that connects to the Payment
+        gateways/services like Paypal, Paytm, Razorpay, etc., using the respective APIs to
+        authenticate and capture the amount for the payment transaction being done.
+    </string>
+    <string name="jukebox_detail_payment_btn_label_pay">Proceed to Pay</string>
+    <string name="jukebox_detail_payment_header">Jukebox Order</string>
+    <string name="jukebox_detail_payment_message_success">Fake Payment Successful! Enjoy your Jukebox!</string>
+
+    <!-- =================================== -->
+    <!-- STRINGS USED IN BOTTOM SHEET PLAYER -->
+    <!-- =================================== -->
+    <string name="player_skip_next">Plays Next song in queue</string>
+    <string name="player_skip_previous">Plays Previous song in queue</string>
+    <string name="player_fast_forward">
+        <!-- Output will be like 'Seeks 2 seconds ahead' -->
+        Seeks <xliff:g example="2" id="seconds">%1$d</xliff:g> seconds ahead
+    </string>
+    <string name="player_fast_rewind">
+        <!-- Output will be like 'Seeks 2 seconds behind' -->
+        Seeks <xliff:g example="2" id="seconds">%1$d</xliff:g> seconds behind
+    </string>
+    <string name="player_shuffle_on">Shuffle: ON</string>
+    <string name="player_shuffle_off">Shuffle: OFF</string>
+    <string name="player_repeat_on">Repeat: ON</string>
+    <string name="player_repeat_off">Repeat: OFF</string>
+    <string name="player_share_song_chooser_title">Share Song Info with …</string>
+    <string name="player_favorite_song_add">Song added to \"My Favorites\" playlist</string>
+    <string name="player_favorite_song_remove">Song removed from \"My Favorites\" playlist</string>
+    <string name="player_explanation">
+        This is a bottom sheet that displays the Audio Player and its related controls.
+        Audio Player will show the current Song Track that is being played
+        along with its info like Album, Album Cover and Artists. It has an interactive seekbar
+        that shows the user how much part of the song is already played
+        and can be used to seek to play from a particular point in the track.
+    </string>
+    <string name="player_message_artist_menu">Launches Artist Activity with Artist details</string>
+    <string name="player_message_album_menu">Launches Album Activity with Album details</string>
+    <string name="player_message_song_info_menu">Launches a Web Browser searched for the Song Name to show its related info</string>
+    <string name="player_message_eq_menu">@string/home_message_eq_settings_menu</string>
+
+    <!-- ============================== -->
+    <!-- STRINGS USED IN ABOUT ACTIVITY -->
+    <!-- ============================== -->
+    <!-- For the introductory text about the App -->
+    <string name="about_content_intro">App designed and developed by &lt;b&gt;Kaushik N Sanji&lt;/b&gt;
+        as part of the project coursework done for the &lt;b&gt;Android Basics Nanodegree&lt;/b&gt;
+        course offered by &lt;b&gt;Udacity&lt;/b&gt;.</string>
+    <!-- For the brief description text about the App -->
+    <string name="about_content_desc">
+        This is a &lt;b&gt;Musical Structure App&lt;/b&gt; that showcases a structure for a typical &lt;b&gt;Music Player App&lt;/b&gt;
+        without implementing its functionality. Each screen in the App displays a Text describing about the screen
+        and what functionality goes into it. &lt;b&gt;Project mainly focuses on App designing&lt;/b&gt;.
+        &lt;br/&gt;&lt;br/&gt;All colorful icons used in the App are from &lt;a href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;.&lt;br/&gt;
+    </string>
+    <!-- Link to the course -->
+    <string name="about_link_udacity_course" translatable="false">https://in.udacity.com/course/android-basics-nanodegree-by-google--nd803</string>
+    <!-- Link to the developer's portfolio -->
+    <string name="about_link_github_profile" translatable="false">https://github.com/kaushiknsanji</string>
+    <!-- Link to the developer's bio -->
+    <string name="about_link_linkedin_profile" translatable="false">https://www.linkedin.com/in/kaushiknsanji</string>
+
+</resources>

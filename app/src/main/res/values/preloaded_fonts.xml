@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Array of Fonts to preload -->
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/audiowide</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/noticia_text</item>
+    </array>
+</resources>

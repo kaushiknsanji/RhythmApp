@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@integer/duration_play_pause"
+    android:propertyName="rotation"
+    android:valueFrom="0"
+    android:valueTo="270"
+    android:valueType="floatType" />

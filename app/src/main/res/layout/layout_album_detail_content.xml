@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_album_detail_background"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_album_detail_track_1_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_1_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_1_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_1_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_1_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_1_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_1_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_1_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_1"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_1_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_1_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_1_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_1_no"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_1_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_1_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_1_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_1_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_1_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_1_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_1_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_1_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_1_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_1_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_1_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_1_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_1_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_1_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_1_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_1_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_1_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_1_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_1_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_1_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_2_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_2_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_2_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_2_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_2_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_2_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_2_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_2_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_2"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_2_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_2_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_2_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_2_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_1_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_2_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_2_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_2_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_2_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_2_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_2_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_2_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_2_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_2_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_2_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_2_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_2_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_2_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_2_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_2_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_2_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_2_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_2_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_2_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_2_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_3_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_3_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_3_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_3_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_3_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_3_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_3_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_3_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_3"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_3_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_3_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_3_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_3_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_2_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_3_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_3_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_3_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_3_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_3_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_3_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_3_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_3_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_3_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_3_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_3_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_3_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_3_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_3_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_3_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_3_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_3_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_3_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_3_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_3_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_4_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_4_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_4_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_4_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_4_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_4_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_4_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_4_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_4"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_4_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_4_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_4_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_4_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_3_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_4_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_4_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_4_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_4_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_4_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_4_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_4_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_4_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_4_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_4_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_4_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_4_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_4_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_4_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_4_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_4_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_4_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_4_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_4_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_4_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_5_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_5_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_5_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_5_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_5_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_5_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_5_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_5_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_5"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_5_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_5_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_5_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_5_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_4_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_5_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_5_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_5_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_5_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_5_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_5_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_5_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_5_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_5_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_5_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_5_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_5_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_5_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_5_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_5_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_5_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_5_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_5_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_5_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_5_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_6_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_6_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_6_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_6_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_6_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_6_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_6_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_6_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_6"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_6_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_6_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_6_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_6_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_5_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_6_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_6_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_6_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_6_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_6_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_6_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_6_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_6_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_6_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_6_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_6_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_6_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_6_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_6_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_6_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_6_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_6_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_6_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_6_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_6_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_7_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_7_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_7_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_7_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_7_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_7_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_7_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_7_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_7"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_7_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_7_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_7_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_7_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_6_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_7_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_7_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_7_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_7_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_7_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_7_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_7_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_7_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_7_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_7_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_7_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_7_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_7_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_7_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_7_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_7_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_7_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_7_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_7_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_7_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_8_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_8_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_8_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_8_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_8_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_8_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_8_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_8_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_8"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_8_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_8_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_8_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_8_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_7_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_8_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_8_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_8_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_8_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_8_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_8_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_8_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_8_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_8_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_8_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_8_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_8_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_8_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_8_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_8_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_8_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_8_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_8_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_8_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_8_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_9_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_9_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_9_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_9_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_9_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_9_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_9_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_9_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_9"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_9_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_9_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_9_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_9_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_8_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_9_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_9_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_9_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_9_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_9_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_9_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_9_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_9_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_9_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_9_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_9_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_9_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_9_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_9_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_9_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_9_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_9_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_9_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_9_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_9_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_10_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_10_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_10_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_10_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_10_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_10_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_10_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_10_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_10"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_10_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_10_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_10_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_10_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_9_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_10_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_10_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_10_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_10_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_10_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_10_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_10_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_10_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_10_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_10_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_10_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_10_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_10_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_10_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_10_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_10_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_10_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_10_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_10_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_10_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_11_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_11_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_11_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_11_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_11_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_11_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_11_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_11_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_11"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_11_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_11_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_11_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_11_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_10_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_11_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_11_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_11_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_11_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_11_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_11_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_11_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_11_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_11_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_11_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_11_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_11_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_11_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_11_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_11_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_11_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_11_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_11_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_11_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_11_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_12_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_12_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_12_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_12_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_12_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_12_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_12_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_12_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_12"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_12_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_12_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_12_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_12_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_11_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_12_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_12_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_12_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_12_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_12_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_12_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_12_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_12_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_12_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_12_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_12_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_12_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_12_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_12_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_12_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_12_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_12_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_12_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_12_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_12_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_13_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_13_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_13_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_13_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_13_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_13_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_13_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_13_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_13"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_13_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_13_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_13_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_13_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_12_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_13_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_13_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_13_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_13_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_13_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_13_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_13_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_13_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_13_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_13_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_13_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_13_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_13_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_13_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_13_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_13_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_13_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_13_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_13_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_13_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_14_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_14_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_14_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_14_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_14_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_14_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_14_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_14_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_14"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_14_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_14_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_14_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_14_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_13_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_14_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_14_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_14_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_14_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_14_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_14_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_14_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_14_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_14_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_14_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_14_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_14_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_14_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_14_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_14_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_14_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_14_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_14_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_14_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_14_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_15_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_15_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_15_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_15_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_15_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_15_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_15_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_15_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_15"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_15_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_15_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_15_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_15_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_14_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_15_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_15_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_15_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_15_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_15_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_15_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_15_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_15_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_15_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_15_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_15_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_15_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_15_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_15_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_15_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_15_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_15_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_15_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_15_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_15_title" />
+
+        <View
+            android:id="@+id/view_album_detail_track_16_clickable"
+            style="@style/AlbumDetailTrackClickableStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_16_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_16_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_16_no"
+            style="@style/AlbumDetailTrackNumberStyle"
+            android:text="@string/album_1_song_16_track_no"
+            app:layout_constraintBottom_toBottomOf="@+id/text_album_detail_track_16_artists"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_16_title" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_16_title"
+            style="@style/AlbumDetailTrackTitleStyle"
+            android:text="@string/album_1_song_16"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_16_length"
+            app:layout_constraintLeft_toRightOf="@+id/text_album_detail_track_16_no"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_16_length"
+            app:layout_constraintStart_toEndOf="@+id/text_album_detail_track_16_no"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_15_clickable" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_16_artists"
+            style="@style/AlbumDetailTrackArtistsStyle"
+            android:text="@string/album_1_song_16_artists"
+            app:layout_constraintEnd_toStartOf="@+id/text_album_detail_track_16_length"
+            app:layout_constraintLeft_toLeftOf="@+id/text_album_detail_track_16_title"
+            app:layout_constraintRight_toLeftOf="@+id/text_album_detail_track_16_length"
+            app:layout_constraintStart_toStartOf="@+id/text_album_detail_track_16_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_album_detail_track_16_title" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_16_more"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_16_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_16_title"
+            app:srcCompat="@drawable/ic_all_more_vert" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_album_detail_track_16_playlist_queue"
+            style="@style/AlbumDetailTrackImageButtonsStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_16_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_16_more"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_16_more"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_16_title"
+            app:srcCompat="@drawable/ic_all_playlist_queue" />
+
+        <TextView
+            android:id="@+id/text_album_detail_track_16_length"
+            style="@style/AlbumDetailTrackLengthStyle"
+            app:layout_constraintBottom_toBottomOf="@id/text_album_detail_track_16_artists"
+            app:layout_constraintEnd_toStartOf="@+id/imgbtn_album_detail_track_16_playlist_queue"
+            app:layout_constraintRight_toLeftOf="@+id/imgbtn_album_detail_track_16_playlist_queue"
+            app:layout_constraintTop_toTopOf="@+id/text_album_detail_track_16_title" />
+
+        <!-- Explanation Text -->
+        <include
+            android:id="@+id/include_album_detail_explanation"
+            style="@style/ConstraintCenterHorizontalStyle"
+            layout="@layout/layout_all_explanation"
+            android:layout_width="@dimen/match_constraint_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_all_explanation_vertical_margin"
+            app:layout_constraintTop_toBottomOf="@+id/view_album_detail_track_16_clickable" />
+
+        <!-- Added Space for Bottom Sheet Player -->
+        <android.widget.Space
+            android:id="@+id/space_album_detail_collapsed_player"
+            style="@style/ConstraintCenterHorizontalStyle"
+            android:layout_width="@dimen/match_constraint_0dp"
+            android:layout_height="@dimen/bottom_sheet_player_peek_height"
+            app:layout_constraintTop_toBottomOf="@+id/include_album_detail_explanation" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

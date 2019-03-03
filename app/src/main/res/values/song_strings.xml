@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Contains static information used by SongListFragment, PlayQueueDetailActivity,
+    PlayerFragment and PlayerActivity -->
+
+    <!-- List of Songs and their Artists shown in SongListFragment, PlayQueueDetailActivity -->
+    <string name="song_1_track_title">Poster Lagwa Do</string>
+    <string name="song_1_track_album">Lukka Chuppi</string>
+    <string name="song_1_track_artists">Mika Singh, Sunanda Sharma, Nikhita Gandhi</string>
+    <string name="song_2_track_title">Better</string>
+    <string name="song_2_track_album">Better</string>
+    <string name="song_2_track_artists">Ananya Birla</string>
+    <string name="song_3_track_title">7 rings</string>
+    <string name="song_3_track_album">Thank U, Next</string>
+    <string name="song_3_track_artists">Ariana Grande</string>
+    <string name="song_4_track_title">Believer</string>
+    <string name="song_4_track_album">Evolve</string>
+    <string name="song_4_track_artists">Imagine Dragons, Lil Wayne</string>
+    <string name="song_5_track_title">Anxiety</string>
+    <string name="song_5_track_album">Inner Monologue Part 1</string>
+    <string name="song_5_track_artists">Julia Michaels, Selena Gomez</string>
+    <string name="song_6_track_title">Swan Song</string>
+    <string name="song_6_track_album">Alita: Battle Angel</string>
+    <string name="song_6_track_artists">Dua Lipa</string>
+    <string name="song_7_track_title">Tum Mere Ho</string>
+    <string name="song_7_track_album">Tum Mere Ho</string>
+    <string name="song_7_track_artists">Vivek Singh</string>
+    <string name="song_8_track_title">Hope</string>
+    <string name="song_8_track_album">Sick Boy</string>
+    <string name="song_8_track_artists">The Chainsmokers, Winona Oak</string>
+    <string name="song_9_track_title">Aankh Marey</string>
+    <string name="song_9_track_album">Simmba</string>
+    <string name="song_9_track_artists">Neha Kakkar, Mika Singh, Kumar Sanu</string>
+    <string name="song_10_track_title">Breathe</string>
+    <string name="song_10_track_album">In a World Like This</string>
+    <string name="song_10_track_artists">Backstreet Boys</string>
+
+    <!-- Default Song track that is always shown in the Bottom Sheet Player -->
+    <string name="default_track_title">Dark Horse</string>
+    <string name="default_track_artists">Katy Perry, Max Martin, Ava James</string>
+    <string name="default_track_album">Prism</string>
+
+</resources>
