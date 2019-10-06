@@ -11,7 +11,7 @@ import com.example.kaushiknsanji.rhythm.data.local.models.SongTrack;
  *
  * @author Kaushik N Sanji
  */
-public class PlayerComposition {
+public final class PlayerComposition {
 
     //Default value of the Last Played Progress of a Song
     private static final int DEFAULT_LAST_PLAYED_PROGRESS = 0;

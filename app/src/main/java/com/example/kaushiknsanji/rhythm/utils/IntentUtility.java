@@ -11,7 +11,7 @@ import android.support.v4.app.ShareCompat;
  *
  * @author Kaushik N Sanji
  */
-public class IntentUtility {
+public final class IntentUtility {
 
     //Text Data Type Constants
     private static final String TEXT_TYPE_PLAIN = "text/plain";
