@@ -1,5 +1,8 @@
 # Rhythm - Musical Structure App
 
+![GitHub](https://img.shields.io/github/license/kaushiknsanji/RhythmApp)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kaushiknsanji/RhythmApp)  ![GitHub repo size](https://img.shields.io/github/repo-size/kaushiknsanji/RhythmApp)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kaushiknsanji/RhythmApp)  ![GitHub All Releases](https://img.shields.io/github/downloads/kaushiknsanji/RhythmApp/total) ![GitHub search hit counter](https://img.shields.io/github/search/kaushiknsanji/RhythmApp/Musical%20Structure%20App) ![Minimum API level](https://img.shields.io/badge/API-15+-yellow)
+
 This App has been developed as part of the **Udacity Android Basics Nanodegree Course** for the Exercise Project **"Musical Structure App"**. App showcases a structure/approach typically used for Apps that play music, without implementing its functionality. Project mainly focuses on App designing. 
 
 ---
@@ -123,6 +126,39 @@ The [HomeActivity](/app/src/main/java/com/example/kaushiknsanji/rhythm/ui/home/H
 
 ---
 
+## Branches in this Repository
+
+* **[udacity](https://github.com/kaushiknsanji/RhythmApp/tree/udacity)**
+	* Contains the code submitted for review, along with review suggestions incorporated.
+
+---
+
 ## Icon/Image credits
 
 All colorful icons used in the App are from <a href="https://icons8.com">Icons8</a>.
+
+---
+
+## Review from the Reviewer (Udacity)
+
+![Review_Musical_Structure](/art/review/review_musical_structure.png)
+
+---
+
+## License
+
+```
+Copyright 2019 Kaushik N. Sanji
+
+Licensed under the Apache License, Version 2.0 (the "License"); 
+you may not use this file except in compliance with the License. 
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+   
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
