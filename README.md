@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/kaushiknsanji/RhythmApp) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kaushiknsanji/RhythmApp) ![GitHub repo size](https://img.shields.io/github/repo-size/kaushiknsanji/RhythmApp) ![GitHub Releases](https://img.shields.io/github/downloads/kaushiknsanji/RhythmApp/v1.0/total)
 
-This is the Release version 1.0 of the Rhythm App.
+This is the Release version 1.0 of the **Rhythm** App.
 
 ## Changes done in this Release
 
