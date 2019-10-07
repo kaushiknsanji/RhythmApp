@@ -130,6 +130,10 @@ The [HomeActivity](/app/src/main/java/com/example/kaushiknsanji/rhythm/ui/home/H
 
 * **[udacity](https://github.com/kaushiknsanji/RhythmApp/tree/udacity)**
 	* Contains the code submitted for review, along with review suggestions incorporated.
+* **[release_v1.0](https://github.com/kaushiknsanji/RhythmApp/tree/release_v1.0)**
+	* Configured an Activity Alias to launch the [HomeActivity](https://github.com/kaushiknsanji/RhythmApp/blob/release_v1.0/app/src/main/java/com/example/kaushiknsanji/rhythm/ui/home/HomeActivity.java).
+	* Added a Keep entry in [Proguard](https://github.com/kaushiknsanji/RhythmApp/blob/release_v1.0/app/proguard-rules.pro) to the keep the names of the UI Classes and their Fragment TAGs AS-IS. Without this, fragments will NOT get launched, since the TAGs are dependent on their Class names.
+	* Other minor changes to prepare the app for local release.
 
 ---
 
