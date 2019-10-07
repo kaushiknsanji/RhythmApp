@@ -27,16 +27,7 @@
         android:theme="@style/AppTheme">
 
         <!-- The Home/Drawer Activity -->
-        <activity
-            android:name=".ui.home.HomeActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ui.home.HomeActivity" />
 
         <!-- Album Detail Activity -->
         <activity android:name=".ui.album.AlbumDetailActivity" />
@@ -55,6 +46,16 @@
 
         <!-- About Activity -->
         <activity android:name=".ui.about.AboutActivity" />
+
+        <!-- Launcher Activity as alias to HomeActivity -->
+        <activity-alias
+            android:name=".LauncherActivity"
+            android:targetActivity=".ui.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
 
         <!-- Service to simulate Player Functionality -->
         <service android:name=".ui.common.services.PlayerService" />
