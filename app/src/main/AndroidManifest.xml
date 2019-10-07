@@ -15,7 +15,8 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kaushiknsanji.rhythm">
+    package="com.example.kaushiknsanji.rhythm"
+    android:installLocation="auto">
 
     <application
         android:name=".MyApplication"

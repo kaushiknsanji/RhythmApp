@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# We want to keep the names of the UI classes and Fragment TAGs AS-IS
+-keepnames class com.example.kaushiknsanji.rhythm.ui.** { <clinit>(); }
